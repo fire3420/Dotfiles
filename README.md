@@ -201,7 +201,7 @@ If you are an iTerm2 user, third column describes the keybinding of similar  "ac
         <td>-</td>
     </tr>
     <tr>
-        <td><code>&lt;prefix&gt; C-r</code></td>
+        <td><code>&lt;prefix&gt; C-q</code></td>
         <td>Reload tmux configuration from ~/.tmux.conf file</td>
         <td>-</td>
     </tr>
