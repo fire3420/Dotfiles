@@ -221,7 +221,7 @@ If you are an iTerm2 user, third column describes the keybinding of similar  "ac
         <td>⌘D</td>
     </tr>
     <tr>
-        <td><code>&lt;prefix&gt; &lt;</code></td>
+        <td><code>&lt;prefix&gt; ]</code></td>
         <td>Select next pane</td>
         <td>⌘[</td>
     </tr>
