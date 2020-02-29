@@ -191,6 +191,11 @@ If you are an iTerm2 user, third column describes the keybinding of similar  "ac
         <td>-</td>
     </tr>
     <tr>
+        <td nowrap><code>&lt;prefix&gt; @</code></td>
+        <td>Copy mode</td>
+        <td>-</td>
+    </tr>
+    <tr>
         <td nowrap><code>&lt;prefix&gt; C-e</code></td>
         <td>Open ~/.tmux.conf file in your $EDITOR</td>
         <td>-</td>
