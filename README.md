@@ -170,7 +170,7 @@ vno <right> <Nop>
 vno <up> <Nop>
 ```
 
-Key bindings
+Tmux Key bindings
 -----------
 So `~/.tmux.conf` overrides default key bindings for many action, to make them more reasonable, easy to recall and comforable to type.
 
