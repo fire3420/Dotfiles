@@ -191,6 +191,11 @@ If you are an iTerm2 user, third column describes the keybinding of similar  "ac
         <td>-</td>
     </tr>
     <tr>
+        <td nowrap><code>&lt;prefix&gt; @</code></td>
+        <td>Copy mode</td>
+        <td>-</td>
+    </tr>
+    <tr>
         <td nowrap><code>&lt;prefix&gt; C-e</code></td>
         <td>Open ~/.tmux.conf file in your $EDITOR</td>
         <td>-</td>
@@ -342,7 +347,12 @@ If you are an iTerm2 user, third column describes the keybinding of similar  "ac
     </tr>
     <tr>
         <td><code>&lt;prefix&gt; C-s</code></td>
-        <td>Toggle status bar visibility</td>
+        <td>Save tmux env (tmux resurrect)</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td><code>&lt;prefix&gt; C-r</code></td>
+        <td>Load tmux env (tmux resurrect)</td>
         <td>-</td>
     </tr>
     <tr>
@@ -362,3 +372,15 @@ If you are an iTerm2 user, third column describes the keybinding of similar  "ac
     </tr>
 </table>
 
+## Tmux conf
+* https://github.com/samoshkin/tmux-config/blob/master/readme.md
+
+## Tmux plugins
+* https://github.com/tmux-plugins/tmux-yank
+* https://github.com/tmux-plugins/tmux-resurrect
+* https://github.com/tmux-plugins/tmux-continuum
+* https://github.com/tmux-plugins/tmux-sessionist
+* https://github.com/tmux-plugins/tmux-logging
+
+## Vim cheatsheet
+* https://vim.rtorr.com/
