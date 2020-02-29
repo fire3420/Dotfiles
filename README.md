@@ -372,9 +372,15 @@ If you are an iTerm2 user, third column describes the keybinding of similar  "ac
     </tr>
 </table>
 
-## Key-Bindings
+## Tmux conf
+* https://github.com/samoshkin/tmux-config/blob/master/readme.md
+
+## Tmux plugins
 * https://github.com/tmux-plugins/tmux-yank
 * https://github.com/tmux-plugins/tmux-resurrect
 * https://github.com/tmux-plugins/tmux-continuum
 * https://github.com/tmux-plugins/tmux-sessionist
 * https://github.com/tmux-plugins/tmux-logging
+
+## Vim cheatsheet
+* https://vim.rtorr.com/
