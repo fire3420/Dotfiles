@@ -3,6 +3,7 @@ if has("syntax")
   syntax on
 endif
 
+
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
@@ -394,11 +395,15 @@ map <silent><Leader>y y:call system("xclip -i -selection clipboard", getreg("\""
 map <silent><Leader>p :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 nnoremap <leader>d "_d
 xnoremap <leader>d "_d
+
+nnoremap <leader>p "_dP
+xnoremap <leader>p "_dP
+
 nnoremap <silent><Leader>o :set paste<CR>m`o<Esc>``:set nopaste<CR>
 nnoremap <silent><Leader>O :set paste<CR>m`O<Esc>``:set nopaste<CR>
 nnoremap <silent><C-w> :tabclose<CR>
-nnoremap <C-r> :call NERDComment(0,"toggle")<CR>
-vnoremap <C-r> :call NERDComment(0,"toggle")<CR>
+nnoremap <C-k> :call NERDComment(0,"toggle")<CR>
+vnoremap <C-k> :call NERDComment(0,"toggle")<CR>
 
 nnoremap <leader>1 ^
 nnoremap <leader>2 $
