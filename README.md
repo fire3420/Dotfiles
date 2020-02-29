@@ -372,3 +372,9 @@ If you are an iTerm2 user, third column describes the keybinding of similar  "ac
     </tr>
 </table>
 
+## Key-Bindings
+git clone https://github.com/tmux-plugins/tmux-yank
+git clone https://github.com/tmux-plugins/tmux-resurrect
+git clone https://github.com/tmux-plugins/tmux-continuum
+git clone https://github.com/tmux-plugins/tmux-sessionist
+git clone https://github.com/tmux-plugins/tmux-logging
