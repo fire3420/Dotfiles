@@ -221,12 +221,12 @@ If you are an iTerm2 user, third column describes the keybinding of similar  "ac
         <td>⌘D</td>
     </tr>
     <tr>
-        <td><code>&lt;prefix&gt; ]</code></td>
+        <td><code>&lt;prefix&gt; C-]</code></td>
         <td>Select next pane</td>
         <td></td>
     </tr>
     <tr>
-        <td><code>&lt;prefix&gt; [</code></td>
+        <td><code>&lt;prefix&gt; C-[</code></td>
         <td>Select previous pane</td>
         <td></td>
     </tr>
@@ -271,12 +271,12 @@ If you are an iTerm2 user, third column describes the keybinding of similar  "ac
         <td>^⌘↓</td>
     </tr>
     <tr>
-        <td><code>&lt;prefix&gt; n</code></td>
+        <td><code>&lt;prefix&gt; ]</code></td>
         <td>Move to next window</td>
         <td>⌘⇧]</td>
     </tr>
     <tr>
-        <td><code>&lt;prefix&gt; p</code></td>
+        <td><code>&lt;prefix&gt; [</code></td>
         <td>Move to previous window</td>
         <td>⌘⇧[</td>
     </tr>
