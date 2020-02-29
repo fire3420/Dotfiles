@@ -347,7 +347,12 @@ If you are an iTerm2 user, third column describes the keybinding of similar  "ac
     </tr>
     <tr>
         <td><code>&lt;prefix&gt; C-s</code></td>
-        <td>Toggle status bar visibility</td>
+        <td>Save tmux env (tmux resurrect)</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td><code>&lt;prefix&gt; C-r</code></td>
+        <td>Load tmux env (tmux resurrect)</td>
         <td>-</td>
     </tr>
     <tr>
