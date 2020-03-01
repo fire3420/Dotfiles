@@ -124,6 +124,7 @@ This plugin is used to show file icons in NerdTree and requires additional steps
 ### Python 
 ```
 let g:pymode_run_bind='<F5>'
+<leader>b : set breakpoint
 imap <F5> <Esc>:w<CR>:!clear;python %<CR>
 close :pclose or <C-w>z (vim preview window)
 ```
@@ -131,7 +132,7 @@ close :pclose or <C-w>z (vim preview window)
 ```
 <leader>g : GoTO
 <leader>G : GoToDefinition
-<leader>G : GoToDeclaration
+<leader>T : GoToDeclaration
 ```
 ### Bookmark
 
