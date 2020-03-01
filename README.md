@@ -126,6 +126,24 @@ This plugin is used to show file icons in NerdTree and requires additional steps
 let g:pymode_run_bind='<F5>'
 imap <F5> <Esc>:w<CR>:!clear;python %<CR>
 ```
+### Bookmark
+
+| Action                                          | Shortcut    | Command                      |
+|-------------------------------------------------|-------------|------------------------------|
+| Add/remove bookmark at current line             | `mm`        | `:BookmarkToggle`            |
+| Add/edit/remove annotation at current line      | `mi`        | `:BookmarkAnnotate <TEXT>`   |
+| Jump to next bookmark in buffer                 | `mn`        | `:BookmarkNext`              |
+| Jump to previous bookmark in buffer             | `mp`        | `:BookmarkPrev`              |
+| Show all bookmarks (toggle)                     | `ma`        | `:BookmarkShowAll`           |
+| Clear bookmarks in current buffer only          | `mc`        | `:BookmarkClear`             |
+| Clear bookmarks in all buffers                  | `mx`        | `:BookmarkClearAll`          |
+| Move up bookmark at current line                | `[count]mkk`| `:BookmarkMoveUp [<COUNT>]`  |
+| Move down bookmark at current line              | `[count]mjj`| `:BookmarkMoveDown [<COUNT>]`|
+| Move bookmark at current line to another line   | `[count]mg` | `:BookmarkMoveToLine <LINE>` |
+| Save all bookmarks to a file                    |             | `:BookmarkSave <FILE_PATH>`  |
+| Load bookmarks from a file                      |             | `:BookmarkLoad <FILE_PATH>`  |
+
+
 ### Switching Between Buffers
 ```
 nmap <F9> :bprev<CR>
@@ -135,41 +153,11 @@ nmap <F10> :bnext<CR>
 ```
 nnoremap <F4> :set relativenumber!<CR>
 ```
-### Comfortable Motion Scrolling
-```
-let g:comfortable_motion_scroll_down_key = "j"
-let g:comfortable_motion_scroll_up_key = "k"  
-```
-```
-nnoremap <silent> <C-d> :call comfortable_motion#flick(g:comfortable_motion_imp    ulse_multiplier * winheight(0) * 2)<CR>
-nnoremap <silent> <C-u> :call comfortable_motion#flick(g:comfortable_motion_imp    ulse_multiplier * winheight(0) * -2)<CR>
-nnoremap <silent> <C-f> :call comfortable_motion#flick(g:comfortable_motion_imp    ulse_multiplier * winheight(0) * 4)<CR>
-nnoremap <silent> <C-b> :call comfortable_motion#flick(g:comfortable_motion_imp    ulse_multiplier * winheight(0) * -4)<CR>
-```
-
 ### NerdTree Toggle
 * NerdTree wil automatically open when vim is launched in terminal without a file
 ```
-nmap " :NERDTreeToggle<CR>
+nmap <localleader>t :NERDTreeToggle<CR>
 ```
-### Disable Arrow Keys
-```
-no <down> <Nop>
-no <left> <Nop>
-no <right> <Nop>
-no <up> <Nop>
-
-ino <down> <Nop>
-ino <left> <Nop>
-ino <right> <Nop>
-ino <up> <Nop>
-                                                                               
-vno <down> <Nop>
-vno <left> <Nop>
-vno <right> <Nop>
-vno <up> <Nop>
-```
-
 Tmux Key bindings
 -----------
 So `~/.tmux.conf` overrides default key bindings for many action, to make them more reasonable, easy to recall and comforable to type.
