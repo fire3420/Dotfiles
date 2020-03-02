@@ -1,3 +1,13 @@
+runtime! debian.vim
+if has("syntax")
+  syntax on
+endif
+
+
+if filereadable("/etc/vim/vimrc.local")
+  source /etc/vim/vimrc.local
+endif
+
 imap jj <Esc>
 let mapleader=";"
 let maplocalleader=","
@@ -22,16 +32,16 @@ Plugin 'gmarik/Vundle.vim'                  " Vundle Plugin Manager
 "-------------------=== Code/Project navigation ===-------------
 Plugin 'scrooloose/nerdtree'                " Project and file navigation
 Plugin 'Xuyuanp/nerdtree-git-plugin'        " NerdTree git functionality
-Plugin 'majutsushi/tagbar'                  " Class/module browser
-Plugin 'vim-ctrlspace/vim-ctrlspace'        " Tabs/Buffers/Fuzzy/Workspaces/Bookmarks
-Plugin 'mileszs/ack.vim'                    " Ag/Grep
+Plugin 'majutsushi/tagbar'                  " Class/module browser(TagbarToggle)
+" Plugin 'vim-ctrlspace/vim-ctrlspace'        " Tabs/Buffers/Fuzzy/Workspaces/Bookmarks: ctrl space
+" Plugin 'mileszs/ack.vim'                    " Ag/Grep
 Plugin 'vim-airline/vim-airline'            " Lean & mean status/tabline for vim
 Plugin 'vim-airline/vim-airline-themes'     " Themes for airline
 Plugin 'fisadev/FixedTaskList.vim'          " Pending tasks list
 "Plugin 'yuttie/comfortable-motion.vim'      " Smooth scrolling
 Plugin 'MattesGroeger/vim-bookmarks'        " Bookmarks
 Plugin 'thaerkh/vim-indentguides'           " Visual representation of indents
-Plugin 'w0rp/ale'                           " Async Lint Engine
+" Plugin 'w0rp/ale'                           " Async Lint Engine
 Plugin 'Valloric/YouCompleteMe'             " Code Completion
 
 "-------------------=== Other ===-------------------------------
@@ -58,6 +68,7 @@ Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'mitsuhiko/vim-python-combined'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'jmcantrell/vim-virtualenv'
+
 Plugin 'jupyter-vim/jupyter-vim'
 Plugin 'google/yapf', { 'rtp': 'plugins/vim' }
 " All of your Plugins must be added before the following line
@@ -281,7 +292,8 @@ set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
 let g:pymode_python='python3'
 
 nmap <leader>g :YcmCompleter GoTo<CR>
-nmap <leader>d :YcmCompleter GoToDefinition<CR>
+nmap <leader>G :YcmCompleter GoToDefinition<CR>
+nmap <leader>T :YcmCompleter GoToDeclaration<CR>
 
 let g:ale_emit_conflict_warnings = 0
 let g:airline#extensions#ale#enabled = 1
@@ -386,11 +398,15 @@ map <silent><Leader>y y:call system("xclip -i -selection clipboard", getreg("\""
 map <silent><Leader>p :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 nnoremap <leader>d "_d
 xnoremap <leader>d "_d
+
+nnoremap <leader>p "_dP
+xnoremap <leader>p "_dP
+
 nnoremap <silent><Leader>o :set paste<CR>m`o<Esc>``:set nopaste<CR>
 nnoremap <silent><Leader>O :set paste<CR>m`O<Esc>``:set nopaste<CR>
-nnoremap <silent><C-w> :tabclose<CR>
-nnoremap <C-r> :call NERDComment(0,"toggle")<CR>
-vnoremap <C-r> :call NERDComment(0,"toggle")<CR>
+" nnoremap <silent><C-w> :tabclose<CR>
+nnoremap <C-k> :call NERDComment(0,"toggle")<CR>
+vnoremap <C-k> :call NERDComment(0,"toggle")<CR>
 
 nnoremap <leader>1 ^
 nnoremap <leader>2 $
@@ -420,3 +436,5 @@ nnoremap <buffer> <silent> <localleader>t :TagbarToggle<CR>
 
 map <C-Y> :call yapf#YAPF()<cr>
 imap <C-Y> <c-o>:call yapf#YAPF()<cr>
+
+let b:ale_fixers = ['autopep8', 'yapf']
