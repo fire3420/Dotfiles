@@ -32,16 +32,16 @@ Plugin 'gmarik/Vundle.vim'                  " Vundle Plugin Manager
 "-------------------=== Code/Project navigation ===-------------
 Plugin 'scrooloose/nerdtree'                " Project and file navigation
 Plugin 'Xuyuanp/nerdtree-git-plugin'        " NerdTree git functionality
-Plugin 'majutsushi/tagbar'                  " Class/module browser
-Plugin 'vim-ctrlspace/vim-ctrlspace'        " Tabs/Buffers/Fuzzy/Workspaces/Bookmarks
-Plugin 'mileszs/ack.vim'                    " Ag/Grep
+Plugin 'majutsushi/tagbar'                  " Class/module browser(TagbarToggle)
+" Plugin 'vim-ctrlspace/vim-ctrlspace'        " Tabs/Buffers/Fuzzy/Workspaces/Bookmarks: ctrl space
+" Plugin 'mileszs/ack.vim'                    " Ag/Grep
 Plugin 'vim-airline/vim-airline'            " Lean & mean status/tabline for vim
 Plugin 'vim-airline/vim-airline-themes'     " Themes for airline
 Plugin 'fisadev/FixedTaskList.vim'          " Pending tasks list
 "Plugin 'yuttie/comfortable-motion.vim'      " Smooth scrolling
 Plugin 'MattesGroeger/vim-bookmarks'        " Bookmarks
 Plugin 'thaerkh/vim-indentguides'           " Visual representation of indents
-Plugin 'w0rp/ale'                           " Async Lint Engine
+" Plugin 'w0rp/ale'                           " Async Lint Engine
 Plugin 'Valloric/YouCompleteMe'             " Code Completion
 
 "-------------------=== Other ===-------------------------------
@@ -290,7 +290,8 @@ set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
 let g:pymode_python='python3'
 
 nmap <leader>g :YcmCompleter GoTo<CR>
-nmap <leader>d :YcmCompleter GoToDefinition<CR>
+nmap <leader>G :YcmCompleter GoToDefinition<CR>
+nmap <leader>T :YcmCompleter GoToDeclaration<CR>
 
 let g:ale_emit_conflict_warnings = 0
 let g:airline#extensions#ale#enabled = 1
@@ -401,7 +402,7 @@ xnoremap <leader>p "_dP
 
 nnoremap <silent><Leader>o :set paste<CR>m`o<Esc>``:set nopaste<CR>
 nnoremap <silent><Leader>O :set paste<CR>m`O<Esc>``:set nopaste<CR>
-nnoremap <silent><C-w> :tabclose<CR>
+" nnoremap <silent><C-w> :tabclose<CR>
 nnoremap <C-k> :call NERDComment(0,"toggle")<CR>
 vnoremap <C-k> :call NERDComment(0,"toggle")<CR>
 
@@ -432,3 +433,4 @@ nnoremap <buffer> <silent> <localleader>b :PythonSetBreak<CR>
 nnoremap <buffer> <silent> <localleader>t :TagbarToggle<CR>
 
 
+let b:ale_fixers = ['autopep8', 'yapf']
