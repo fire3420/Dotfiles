@@ -68,6 +68,7 @@ Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'mitsuhiko/vim-python-combined'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'jmcantrell/vim-virtualenv'
+Plugin 'skywind3000/asyncrun.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()                           " required
@@ -358,7 +359,7 @@ let g:pymode_indent=1
 
 " code running
 let g:pymode_run=1
-let g:pymode_run_bind='<F5>'
+" let g:pymode_run_bind='<F5>'
 
 let g:ale_sign_column_always = 0
 let g:ale_emit_conflict_warnings = 0                                                                         
@@ -366,7 +367,36 @@ let g:airline#extensions#ale#enabled = 1
 let g:pymode_rope_lookup_project = 0
 let g:airline#extensions#tabline#enabled = 1
 
-imap <F5> <Esc>:w<CR>:!clear;python %<CR>
+" imap <F5> <Esc>:w<CR>:!clear;python %<CR>
+
+" Quick run via <F5>
+nnoremap <F5> :call <SID>compile_and_run()<CR>
+
+function! s:compile_and_run()
+    exec 'w'
+    if &filetype == 'c'
+        exec "AsyncRun! gcc % -o %<; time ./%<"
+    elseif &filetype == 'cpp'
+       exec "AsyncRun! g++ -std=c++11 % -o %<; time ./%<"
+    elseif &filetype == 'java'
+       exec "AsyncRun! javac %; time java %<"
+    elseif &filetype == 'sh'
+       exec "AsyncRun! time bash %"
+    elseif &filetype == 'python'
+       exec "AsyncRun! time python %"
+    endif
+endfunction
+
+" Deprecated:
+" augroup SPACEVIM_ASYNCRUN
+"     autocmd!
+"    " Automatically open the quickfix window
+"     autocmd User AsyncRunStart call asyncrun#quickfix_toggle(15, 1)
+" augroup END
+"
+" asyncrun now has an option for opening quickfix automatically
+let g:asyncrun_open = 15
+
 
 "no <down> <Nop>
 "no <left> <Nop>
