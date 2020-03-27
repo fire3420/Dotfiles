@@ -69,6 +69,7 @@ Plugin 'mitsuhiko/vim-python-combined'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'skywind3000/asyncrun.vim'
+Plugin 'psf/black'
 
 " All of your Plugins must be added before the following line
 call vundle#end()                           " required

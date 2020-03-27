@@ -72,6 +72,7 @@ Plugin 'skywind3000/asyncrun.vim'
 
 Plugin 'jupyter-vim/jupyter-vim'
 Plugin 'google/yapf', { 'rtp': 'plugins/vim' }
+Plugin 'psf/black'
 
 " All of your Plugins must be added before the following line
 call vundle#end()                           " required
