@@ -9,8 +9,7 @@ if filereadable("/etc/vim/vimrc.local")
 endif
 
 imap jj <Esc>
-let mapleader=";"
-let maplocalleader=","
+let mapleader="\\"
 
 
 set nocompatible              " required
