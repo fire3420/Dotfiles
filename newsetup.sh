@@ -15,11 +15,11 @@ if [ -d "$DOTFILES" ]; then
     rm -rf $DOTFILES
 fi
 
-wget https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb -P $DOTFILES
-apt install -y $DOTFILES/nvim-linux64.deb
-
 printf "${BLUE}%s${NORMAL}\n" "Cloning dotfiles from ${REPO_HTTPS}"
 env git clone --depth=1 $REPO_HTTPS $DOTFILES
+
+wget https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb -P $DOTFILES
+apt install -y $DOTFILES/nvim-linux64.deb
 
 rm -rf $HOME/.config/nvim
 env git clone https://github.com/NvChad/NvChad $HOME/.config/nvim --depth 1
