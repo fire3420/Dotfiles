@@ -9,3 +9,4 @@ pip3 install --upgrade pynvim
 DOTFILES=~/.dotfiles
 wget https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb -P $DOTFILES
 apt install -y $DOTFILES/nvim-linux64.deb
+rm -rf $DOTFILES

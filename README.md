@@ -17,4 +17,9 @@ usermod -aG sudo john
 su john
 ```
 
+
+Install:
+```
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/fire3420/Dotfiles/nvim/install_pkg.sh)"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/fire3420/Dotfiles/nvim/newsetup.sh)"
+```
