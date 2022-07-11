@@ -20,3 +20,14 @@ ln -sf $DOTFILES/nvim/custom $HOME/.config/nvim/lua
 # chmod -R 777 $HOME/.config/nvim
 
 echo 'alias vi=nvim' >> $HOME/.bashrc
+
+# jukit
+rm -rf $HOME/.local/share/nvim/site/pack/packer/start/vim-jukit/autoload
+rm -rf $HOME/.local/share/nvim/site/pack/packer/start/vim-jukit/helpers
+rm -rf $HOME/.local/share/nvim/site/pack/packer/start/vim-jukit/plugin
+ln -sf $PWD/jukit/autoload $HOME/.local/share/nvim/site/pack/packer/start/vim-jukit
+ln -sf $PWD/jukit/helpers $HOME/.local/share/nvim/site/pack/packer/start/vim-jukit
+ln -sf $PWD/jukit/plugin $HOME/.local/share/nvim/site/pack/packer/start/vim-jukit
+
+# w3m
+ln -sf $HOME/Dotfiles/w3mkeymap $HOME/.w3m/keymap

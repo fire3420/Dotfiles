@@ -1,0 +1,7 @@
+xtick.color : black
+ytick.color : black
+savefig.transparent : False
+axes.facecolor : ffffff
+axes.titlecolor : 000000
+axes.labelcolor : 000000
+savefig.facecolor : (0,0,0,0)

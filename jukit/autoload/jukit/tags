@@ -1,0 +1,195 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/Users/john/.vim/plugged/vim-jukit/autoload/jukit/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20220612.0/
+g:_jukit_main_buf	nvimterm/splits.vim	/^    let g:_jukit_main_buf = bufnr('%', 1)$/;"	v
+g:_jukit_main_buf	vimterm/splits.vim	/^    let g:_jukit_main_buf = bufnr('%', 1)$/;"	v
+g:_jukit_python	kitty/splits.vim	/^    let g:_jukit_python = 0$/;"	v
+g:_jukit_python	nvimterm/splits.vim	/^    let g:_jukit_python = 0$/;"	v
+g:_jukit_python	splits.vim	/^        let g:_jukit_python = stridx(split(g:jukit_shell_cmd, '\/')[-1], 'python') >= 0$/;"	v
+g:_jukit_python	tmux/splits.vim	/^    let g:_jukit_python = 0$/;"	v
+g:_jukit_python	vimterm/splits.vim	/^    let g:_jukit_python = 0$/;"	v
+g:jukit_inline_plotting	splits.vim	/^    let g:jukit_inline_plotting = 0$/;"	v
+g:jukit_ipython	splits.vim	/^        let g:jukit_ipython = stridx(split(g:jukit_shell_cmd, '\/')[-1], 'ipython') >= 0$/;"	v
+g:jukit_mpl_style	splits.vim	/^        let g:jukit_mpl_style = jukit#util#plugin_path()$/;"	v
+g:jukit_outhist_buf	nvimterm/splits.vim	/^    let g:jukit_outhist_buf = ids[1]$/;"	v
+g:jukit_outhist_last_cell	kitty/splits.vim	/^        let g:jukit_outhist_last_cell = -1$/;"	v
+g:jukit_outhist_last_cell	kitty/splits.vim	/^    let g:jukit_outhist_last_cell = -1$/;"	v
+g:jukit_outhist_last_cell	kitty/splits.vim	/^    let g:jukit_outhist_last_cell = cell_id$/;"	v
+g:jukit_outhist_last_cell	nvimterm/splits.vim	/^        let g:jukit_outhist_last_cell = -1$/;"	v
+g:jukit_outhist_last_cell	nvimterm/splits.vim	/^    let g:jukit_outhist_last_cell = -1$/;"	v
+g:jukit_outhist_last_cell	nvimterm/splits.vim	/^    let g:jukit_outhist_last_cell = cell_id$/;"	v
+g:jukit_outhist_last_cell	tmux/splits.vim	/^        let g:jukit_outhist_last_cell = -1$/;"	v
+g:jukit_outhist_last_cell	tmux/splits.vim	/^    let g:jukit_outhist_last_cell = -1$/;"	v
+g:jukit_outhist_last_cell	tmux/splits.vim	/^    let g:jukit_outhist_last_cell = cell_id$/;"	v
+g:jukit_outhist_last_cell	vimterm/splits.vim	/^        let g:jukit_outhist_last_cell = -1$/;"	v
+g:jukit_outhist_last_cell	vimterm/splits.vim	/^    let g:jukit_outhist_last_cell = -1$/;"	v
+g:jukit_outhist_last_cell	vimterm/splits.vim	/^    let g:jukit_outhist_last_cell = cell_id$/;"	v
+g:jukit_outhist_title	kitty/splits.vim	/^    let g:jukit_outhist_title=jukit#util#get_unique_id()$/;"	v
+g:jukit_outhist_title	nvimterm/splits.vim	/^    let g:jukit_outhist_title = ids[0]$/;"	v
+g:jukit_outhist_title	tmux/splits.vim	/^    let g:jukit_outhist_title = matchstr(response, '%\\d\\{1,}\\ze')$/;"	v
+g:jukit_outhist_title	vimterm/splits.vim	/^    let g:jukit_outhist_title = s:setup_term()$/;"	v
+g:jukit_output_buf	nvimterm/splits.vim	/^    let g:jukit_output_buf = ids[1]$/;"	v
+g:jukit_output_title	kitty/splits.vim	/^    let g:jukit_output_title=jukit#util#get_unique_id()$/;"	v
+g:jukit_output_title	nvimterm/splits.vim	/^    let g:jukit_output_title = ids[0]$/;"	v
+g:jukit_output_title	tmux/splits.vim	/^    let g:jukit_output_title = matchstr(response, '[a-zA-Z]\\+:[0-9]*\\.[0-9]\\+')$/;"	v
+g:jukit_output_title	vimterm/splits.vim	/^    let g:jukit_output_title = s:setup_term()$/;"	v
+g:jukit_terminal	splits.vim	/^        let g:jukit_terminal = 'nvimterm'$/;"	v
+g:jukit_terminal	splits.vim	/^        let g:jukit_terminal = 'vimterm'$/;"	v
+g:ntries	util.vim	/^            let g:ntries = a:ntries_left$/;"	v
+jukit#cells#create_above	cells.vim	/^fun! jukit#cells#create_above(markdown) abort$/;"	f
+jukit#cells#create_below	cells.vim	/^fun! jukit#cells#create_below(markdown) abort$/;"	f
+jukit#cells#delete	cells.vim	/^fun! jukit#cells#delete() abort$/;"	f
+jukit#cells#delete_outputs	cells.vim	/^fun! jukit#cells#delete_outputs(all) abort$/;"	f
+jukit#cells#merge_above	cells.vim	/^fun! jukit#cells#merge_above() abort$/;"	f
+jukit#cells#merge_below	cells.vim	/^fun! jukit#cells#merge_below() abort$/;"	f
+jukit#cells#move_down	cells.vim	/^fun! jukit#cells#move_down() abort$/;"	f
+jukit#cells#move_up	cells.vim	/^fun! jukit#cells#move_up() abort$/;"	f
+jukit#cells#split	cells.vim	/^fun! jukit#cells#split() abort$/;"	f
+jukit#convert#notebook_convert	convert.vim	/^fun! jukit#convert#notebook_convert(...) abort$/;"	f
+jukit#convert#save_nb_to_file	convert.vim	/^fun! jukit#convert#save_nb_to_file(run, open, to) abort$/;"	f
+jukit#kitty#cmd#close_window	kitty/cmd.vim	/^fun! jukit#kitty#cmd#close_window(win_title) abort$/;"	f
+jukit#kitty#cmd#invalid_version	kitty/cmd.vim	/^fun! jukit#kitty#cmd#invalid_version(vreq) abort$/;"	f
+jukit#kitty#cmd#kitty_command	kitty/cmd.vim	/^fun! jukit#kitty#cmd#kitty_command(...) abort$/;"	f
+jukit#kitty#cmd#launch	kitty/cmd.vim	/^fun! jukit#kitty#cmd#launch(win_title, ...) abort$/;"	f
+jukit#kitty#cmd#send_text	kitty/cmd.vim	/^fun! jukit#kitty#cmd#send_text(win_title, text) abort$/;"	f
+jukit#kitty#layouts#set_layout	kitty/layouts.vim	/^fun! jukit#kitty#layouts#set_layout(layout) abort$/;"	f
+jukit#kitty#splits#close_history	kitty/splits.vim	/^fun! jukit#kitty#splits#close_history() abort$/;"	f
+jukit#kitty#splits#close_output_split	kitty/splits.vim	/^fun! jukit#kitty#splits#close_output_split() abort$/;"	f
+jukit#kitty#splits#exists	kitty/splits.vim	/^fun! jukit#kitty#splits#exists(...) abort$/;"	f
+jukit#kitty#splits#history	kitty/splits.vim	/^fun! jukit#kitty#splits#history() abort$/;"	f
+jukit#kitty#splits#out_hist_scroll	kitty/splits.vim	/^fun! jukit#kitty#splits#out_hist_scroll(down) abort$/;"	f
+jukit#kitty#splits#output	kitty/splits.vim	/^fun! jukit#kitty#splits#output(...) abort$/;"	f
+jukit#kitty#splits#show_last_cell_output	kitty/splits.vim	/^fun! jukit#kitty#splits#show_last_cell_output(force) abort$/;"	f
+jukit#kitty#splits#term	kitty/splits.vim	/^fun! jukit#kitty#splits#term(...) abort$/;"	f
+jukit#layouts#set_layout	layouts.vim	/^fun! jukit#layouts#set_layout(...) abort$/;"	f
+jukit#nvimterm#layouts#set_layout	nvimterm/layouts.vim	/^fun! jukit#nvimterm#layouts#set_layout(layout) abort$/;"	f
+jukit#nvimterm#splits#close_history	nvimterm/splits.vim	/^fun! jukit#nvimterm#splits#close_history() abort$/;"	f
+jukit#nvimterm#splits#close_output_split	nvimterm/splits.vim	/^fun! jukit#nvimterm#splits#close_output_split() abort$/;"	f
+jukit#nvimterm#splits#exists	nvimterm/splits.vim	/^fun! jukit#nvimterm#splits#exists(...) abort$/;"	f
+jukit#nvimterm#splits#history	nvimterm/splits.vim	/^fun! jukit#nvimterm#splits#history() abort$/;"	f
+jukit#nvimterm#splits#out_hist_scroll	nvimterm/splits.vim	/^fun! jukit#nvimterm#splits#out_hist_scroll(down) abort$/;"	f
+jukit#nvimterm#splits#output	nvimterm/splits.vim	/^fun! jukit#nvimterm#splits#output(...) abort$/;"	f
+jukit#nvimterm#splits#show_last_cell_output	nvimterm/splits.vim	/^fun! jukit#nvimterm#splits#show_last_cell_output(force) abort$/;"	f
+jukit#nvimterm#splits#term	nvimterm/splits.vim	/^fun! jukit#nvimterm#splits#term() abort$/;"	f
+jukit#send#all	send.vim	/^fun! jukit#send#all() abort$/;"	f
+jukit#send#clean_output_history	send.vim	/^fun! jukit#send#clean_output_history(...) abort$/;"	f
+jukit#send#line	send.vim	/^fun! jukit#send#line() abort$/;"	f
+jukit#send#section	send.vim	/^fun! jukit#send#section(move_next) abort$/;"	f
+jukit#send#selection	send.vim	/^fun! jukit#send#selection() abort$/;"	f
+jukit#send#send_to_split	send.vim	/^fun! jukit#send#send_to_split(code) abort$/;"	f
+jukit#send#until_current_section	send.vim	/^fun! jukit#send#until_current_section() abort$/;"	f
+jukit#splits#_build_shell_cmd	splits.vim	/^fun! jukit#splits#_build_shell_cmd(...) abort$/;"	f
+jukit#splits#_get_mpl_style_file	splits.vim	/^fun! jukit#splits#_get_mpl_style_file() abort$/;"	f
+jukit#splits#close_history	splits.vim	/^fun! jukit#splits#close_history() abort$/;"	f
+jukit#splits#close_output_and_history	splits.vim	/^fun! jukit#splits#close_output_and_history(confirm) abort$/;"	f
+jukit#splits#close_output_split	splits.vim	/^fun! jukit#splits#close_output_split() abort$/;"	f
+jukit#splits#history	splits.vim	/^fun! jukit#splits#history() abort$/;"	f
+jukit#splits#out_hist_scroll	splits.vim	/^fun! jukit#splits#out_hist_scroll(down) abort$/;"	f
+jukit#splits#output	splits.vim	/^fun! jukit#splits#output(...) abort$/;"	f
+jukit#splits#output_and_history	splits.vim	/^fun! jukit#splits#output_and_history(...) abort$/;"	f
+jukit#splits#show_last_cell_output	splits.vim	/^fun! jukit#splits#show_last_cell_output(force) abort$/;"	f
+jukit#splits#split_exists	splits.vim	/^fun! jukit#splits#split_exists(...) abort$/;"	f
+jukit#splits#term	splits.vim	/^fun! jukit#splits#term() abort$/;"	f
+jukit#splits#toggle_auto_hist	splits.vim	/^fun! jukit#splits#toggle_auto_hist(...) abort$/;"	f
+jukit#tmux#cmd#close_window	tmux/cmd.vim	/^fun! jukit#tmux#cmd#close_window(win_title) abort$/;"	f
+jukit#tmux#cmd#invalid_version	tmux/cmd.vim	/^fun! jukit#tmux#cmd#invalid_version(vreq) abort$/;"	f
+jukit#tmux#cmd#launch	tmux/cmd.vim	/^fun! jukit#tmux#cmd#launch(...) abort$/;"	f
+jukit#tmux#cmd#pane_exists	tmux/cmd.vim	/^fun! jukit#tmux#cmd#pane_exists(pane)$/;"	f
+jukit#tmux#cmd#send_text	tmux/cmd.vim	/^fun! jukit#tmux#cmd#send_text(pane, text) abort$/;"	f
+jukit#tmux#cmd#tmux_command	tmux/cmd.vim	/^fun! jukit#tmux#cmd#tmux_command(...) abort$/;"	f
+jukit#tmux#layouts#set_layout	tmux/layouts.vim	/^fun! jukit#tmux#layouts#set_layout(layout) abort$/;"	f
+jukit#tmux#splits#close_history	tmux/splits.vim	/^fun! jukit#tmux#splits#close_history() abort$/;"	f
+jukit#tmux#splits#close_output_split	tmux/splits.vim	/^fun! jukit#tmux#splits#close_output_split() abort$/;"	f
+jukit#tmux#splits#exists	tmux/splits.vim	/^fun! jukit#tmux#splits#exists(...) abort$/;"	f
+jukit#tmux#splits#history	tmux/splits.vim	/^fun! jukit#tmux#splits#history() abort$/;"	f
+jukit#tmux#splits#out_hist_scroll	tmux/splits.vim	/^fun! jukit#tmux#splits#out_hist_scroll(down) abort$/;"	f
+jukit#tmux#splits#output	tmux/splits.vim	/^fun! jukit#tmux#splits#output(...) abort$/;"	f
+jukit#tmux#splits#show_last_cell_output	tmux/splits.vim	/^fun! jukit#tmux#splits#show_last_cell_output(force) abort$/;"	f
+jukit#tmux#splits#term	tmux/splits.vim	/^fun! jukit#tmux#splits#term(...) abort$/;"	f
+jukit#util#catch_load_json	util.vim	/^fun! jukit#util#catch_load_json(file, ntries_left, time_between) abort$/;"	f
+jukit#util#get_adjacent_markers	util.vim	/^fun! jukit#util#get_adjacent_markers() abort$/;"	f
+jukit#util#get_all_ids	util.vim	/^fun! jukit#util#get_all_ids() abort$/;"	f
+jukit#util#get_current_cell_id	util.vim	/^fun! jukit#util#get_current_cell_id() abort$/;"	f
+jukit#util#get_lang_info	util.vim	/^fun! jukit#util#get_lang_info() abort$/;"	f
+jukit#util#get_marker_above	util.vim	/^fun! jukit#util#get_marker_above() abort$/;"	f
+jukit#util#get_marker_below	util.vim	/^fun! jukit#util#get_marker_below() abort$/;"	f
+jukit#util#get_terminal	util.vim	/^fun! jukit#util#get_terminal() abort$/;"	f
+jukit#util#get_unique_id	util.vim	/^fun! jukit#util#get_unique_id() abort$/;"	f
+jukit#util#get_visual_selection	util.vim	/^fun! jukit#util#get_visual_selection() abort$/;"	f
+jukit#util#ipython_info_get	util.vim	/^fun! jukit#util#ipython_info_get(keys, ...) abort$/;"	f
+jukit#util#ipython_info_write	util.vim	/^fun! jukit#util#ipython_info_write(keys, texts) abort$/;"	f
+jukit#util#is_valid_version	util.vim	/^fun! jukit#util#is_valid_version(vcur, vreq) abort$/;"	f
+jukit#util#md_buffer_vars	util.vim	/^fun! jukit#util#md_buffer_vars() abort$/;"	f
+jukit#util#plugin_path	util.vim	/^fun! jukit#util#plugin_path() abort$/;"	f
+jukit#util#replace_old_markers	util.vim	/^fun! jukit#util#replace_old_markers() abort$/;"	f
+jukit#vimterm#layouts#set_layout	vimterm/layouts.vim	/^fun! jukit#vimterm#layouts#set_layout(layout) abort$/;"	f
+jukit#vimterm#splits#close_history	vimterm/splits.vim	/^fun! jukit#vimterm#splits#close_history() abort$/;"	f
+jukit#vimterm#splits#close_output_split	vimterm/splits.vim	/^fun! jukit#vimterm#splits#close_output_split() abort$/;"	f
+jukit#vimterm#splits#exists	vimterm/splits.vim	/^fun! jukit#vimterm#splits#exists(...) abort$/;"	f
+jukit#vimterm#splits#history	vimterm/splits.vim	/^fun! jukit#vimterm#splits#history() abort$/;"	f
+jukit#vimterm#splits#out_hist_scroll	vimterm/splits.vim	/^fun! jukit#vimterm#splits#out_hist_scroll(down) abort$/;"	f
+jukit#vimterm#splits#output	vimterm/splits.vim	/^fun! jukit#vimterm#splits#output(...) abort$/;"	f
+jukit#vimterm#splits#show_last_cell_output	vimterm/splits.vim	/^fun! jukit#vimterm#splits#show_last_cell_output(force) abort$/;"	f
+jukit#vimterm#splits#term	vimterm/splits.vim	/^fun! jukit#vimterm#splits#term() abort$/;"	f
+jukit_auto_close	splits.vim	/^    augroup jukit_auto_close$/;"	a
+jukit_auto_output	splits.vim	/^        augroup jukit_auto_output$/;"	a
+jukit_clean_outhist	send.vim	/^    augroup jukit_clean_outhist$/;"	a
+s:check_dict_validity	layouts.vim	/^fun! s:check_dict_validity(layout) abort$/;"	f
+s:check_filetype	convert.vim	/^fun s:check_filetype()$/;"	f
+s:check_response	kitty/cmd.vim	/^fun! s:check_response(cmd, response) abort$/;"	f
+s:check_response	tmux/cmd.vim	/^fun! s:check_response(cmd, response, quiet) abort$/;"	f
+s:clean_outhist_autocmd	send.vim	/^fun! s:clean_outhist_autocmd() abort$/;"	f
+s:clean_outhist_time_passed	send.vim	/^fun! s:clean_outhist_time_passed() abort$/;"	f
+s:convert_to_ipynb	convert.vim	/^fun! s:convert_to_ipynb(args) abort$/;"	f
+s:convert_to_script	convert.vim	/^fun! s:convert_to_script() abort$/;"	f
+s:copy_output	cells.vim	/^fun! s:copy_output(from_id, to_id) abort$/;"	f
+s:create_autocmd_close_splits	splits.vim	/^fun! s:create_autocmd_close_splits() abort$/;"	f
+s:delete_output	cells.vim	/^fun! s:delete_output(cell_id) abort$/;"	f
+s:dict_valid	layouts.vim	/^    let s:dict_valid = s:check_dict_validity(g:jukit_layout)$/;"	v
+s:get_buf_by_name	nvimterm/layouts.vim	/^fun! s:get_buf_by_name(name, output_exists, outhist_exists) abort$/;"	f
+s:get_buf_by_name	vimterm/layouts.vim	/^fun! s:get_buf_by_name(name, output_exists, outhist_exists) abort$/;"	f
+s:get_key	util.vim	/^fun! s:get_key(json, key, quiet) abort$/;"	f
+s:get_pane_by_name	tmux/layouts.vim	/^fun! s:get_pane_by_name(name, output_exists, outhist_exists) abort$/;"	f
+s:inline_plot_psbl	splits.vim	/^let s:inline_plot_psbl = index(s:supported_graphical_term, g:jukit_terminal) >= 0$/;"	v
+s:invalid_kitty_version	splits.vim	/^    let s:invalid_kitty_version = jukit#kitty#cmd#invalid_version(g:jukit_required_kitty_version/;"	v
+s:ipython_version	splits.vim	/^    let s:ipython_version = matchstr(s:ipython_version, '.\\{-}\\zs[0-9\\.]\\{1,}')$/;"	v
+s:ipython_version	splits.vim	/^    let s:ipython_version = system(g:jukit_shell_cmd . ' --version')$/;"	v
+s:jukit_textcell_regex	cells.vim	/^let s:jukit_textcell_regex = b:jukit_md_start . '\\_.{-}' . b:jukit_md_end$/;"	v
+s:layout_kitten	kitty/layouts.vim	/^let s:layout_kitten = jukit#util#plugin_path() . '\/helpers\/layout_kitten.py'$/;"	v
+s:map_extract_ids	util.vim	/^fun! s:map_extract_ids(v, l) abort$/;"	f
+s:merge_outputs	cells.vim	/^fun! s:merge_outputs(cell_above, cell_below, new_id) abort$/;"	f
+s:new_marker	cells.vim	/^fun! s:new_marker(id1, id2, lnum, markdown) abort$/;"	f
+s:outhist_job_mode	vimterm/splits.vim	/^fun! s:outhist_job_mode(stay) abort$/;"	f
+s:outhist_normal_mode	nvimterm/splits.vim	/^fun! s:outhist_normal_mode(stay) abort$/;"	f
+s:outhist_normal_mode	vimterm/splits.vim	/^fun! s:outhist_normal_mode(stay) abort$/;"	f
+s:output_exists	send.vim	/^fun! s:output_exists() abort$/;"	f
+s:parse_layout	nvimterm/layouts.vim	/^fun! s:parse_layout(layout, op, oh) abort$/;"	f
+s:parse_layout	tmux/layouts.vim	/^fun! s:parse_layout(layout, op, oh) abort$/;"	f
+s:parse_layout	vimterm/layouts.vim	/^fun! s:parse_layout(layout, op, oh) abort$/;"	f
+s:replace	util.vim	/^    fun s:replace() closure$/;"	f
+s:script_path	util.vim	/^let s:script_path = expand("<sfile>:p:h")$/;"	v
+s:search_all_windows	kitty/splits.vim	/^fun! s:search_all_windows() abort$/;"	f
+s:search_current_tab	kitty/splits.vim	/^fun! s:search_current_tab() abort$/;"	f
+s:send	send.vim	/^fun! s:send(bufnr, text) abort$/;"	f
+s:send_to_split	send.vim	/^fun! s:send_to_split(magic_cmd, code, save, ...) abort$/;"	f
+s:set_marker_above	cells.vim	/^fun! s:set_marker_above(id1, id2) abort$/;"	f
+s:set_marker_below	cells.vim	/^fun! s:set_marker_below(id1, id2) abort$/;"	f
+s:setup_inner_split	tmux/layouts.vim	/^fun! s:setup_inner_split(outer_pane, inner_pair, panes_filtered, main_pane, outer_first) abort$/;"	f
+s:setup_outer_split	tmux/layouts.vim	/^fun! s:setup_outer_split(outer_pane, panes_filtered, main_pane, outer_first) abort$/;"	f
+s:setup_term	nvimterm/splits.vim	/^fun! s:setup_term() abort$/;"	f
+s:setup_term	vimterm/splits.vim	/^fun! s:setup_term() abort$/;"	f
+s:supported_graphical_term	splits.vim	/^let s:supported_graphical_term = ['kitty', 'tmux']$/;"	v
+s:system	kitty/cmd.vim	/^fun! s:system(arglist) abort$/;"	f
+s:system	tmux/cmd.vim	/^fun! s:system(arglist) abort$/;"	f
+s:tmux_property	tmux/cmd.vim	/^fun! s:tmux_property(property) abort$/;"	f
+s:v_split	splits.vim	/^    let s:v_split = split(s:ipython_version, '\\.')$/;"	v
+s:wait_for_pane	tmux/splits.vim	/^fun! s:wait_for_pane(pane, num_tries, delay)$/;"	f
+terminal	tmux/.jukit/.jukit_info.json	/^{"terminal":"tmux"}/;"	s

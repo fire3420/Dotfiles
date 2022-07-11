@@ -1,0 +1,455 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/Users/john/.vim/plugged/vim-jukit/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20220612.0/
+<cr>	plugin/jukit.vim	/^        vnoremap <cr> :<C-U>call jukit#send#selection()<cr>$/;"	m
+<leader><space>	plugin/jukit.vim	/^        nnoremap <leader><space> :call jukit#send#section(0)<cr>$/;"	m
+<leader>ah	plugin/jukit.vim	/^        nnoremap <leader>ah :call jukit#splits#toggle_auto_hist()<cr>$/;"	m
+<leader>all	plugin/jukit.vim	/^        nnoremap <leader>all :call jukit#send#all()<cr>$/;"	m
+<leader>cM	plugin/jukit.vim	/^        nnoremap <leader>cM :call jukit#cells#merge_above()<cr>$/;"	m
+<leader>cO	plugin/jukit.vim	/^        nnoremap <leader>cO :call jukit#cells#create_above(0)<cr>$/;"	m
+<leader>cT	plugin/jukit.vim	/^        nnoremap <leader>cT :call jukit#cells#create_above(1)<cr>$/;"	m
+<leader>cc	plugin/jukit.vim	/^        nnoremap <leader>cc :call jukit#send#until_current_section()<cr>$/;"	m
+<leader>cd	plugin/jukit.vim	/^        nnoremap <leader>cd :call jukit#cells#delete()<cr>$/;"	m
+<leader>cj	plugin/jukit.vim	/^        nnoremap <leader>cj :call jukit#cells#move_down()<cr>$/;"	m
+<leader>ck	plugin/jukit.vim	/^        nnoremap <leader>ck :call jukit#cells#move_up()<cr>$/;"	m
+<leader>cm	plugin/jukit.vim	/^        nnoremap <leader>cm :call jukit#cells#merge_below()<cr>$/;"	m
+<leader>co	plugin/jukit.vim	/^        nnoremap <leader>co :call jukit#cells#create_below(0)<cr>$/;"	m
+<leader>cs	plugin/jukit.vim	/^        nnoremap <leader>cs :call jukit#cells#split()<cr>$/;"	m
+<leader>ct	plugin/jukit.vim	/^        nnoremap <leader>ct :call jukit#cells#create_below(1)<cr>$/;"	m
+<leader>dao	plugin/jukit.vim	/^        nnoremap <leader>dao :call jukit#cells#delete_outputs(1)<cr>$/;"	m
+<leader>do	plugin/jukit.vim	/^        nnoremap <leader>do :call jukit#cells#delete_outputs(0)<cr>$/;"	m
+<leader>hd	plugin/jukit.vim	/^        nnoremap <leader>hd :call jukit#splits#close_history()<cr>$/;"	m
+<leader>hs	plugin/jukit.vim	/^        nnoremap <leader>hs :call jukit#splits#history()<cr>$/;"	m
+<leader>ht	plugin/jukit.vim	/^        nnoremap <leader>ht :call jukit#convert#save_nb_to_file(0,1,'html')<cr>$/;"	m
+<leader>j	plugin/jukit.vim	/^        nnoremap <leader>j :call jukit#splits#out_hist_scroll(1)<cr>$/;"	m
+<leader>k	plugin/jukit.vim	/^        nnoremap <leader>k :call jukit#splits#out_hist_scroll(0)<cr>$/;"	m
+<leader>np	plugin/jukit.vim	/^        nnoremap <leader>np :call jukit#convert#notebook_convert("jupyter-notebook")<cr>$/;"	m
+<leader>od	plugin/jukit.vim	/^        nnoremap <leader>od :call jukit#splits#close_output_split()<cr>$/;"	m
+<leader>ohd	plugin/jukit.vim	/^        nnoremap <leader>ohd :call jukit#splits#close_output_and_history(1)<cr>$/;"	m
+<leader>ohs	plugin/jukit.vim	/^        nnoremap <leader>ohs :call jukit#splits#output_and_history()<cr>$/;"	m
+<leader>os	plugin/jukit.vim	/^        nnoremap <leader>os :call jukit#splits#output()<cr>$/;"	m
+<leader>pd	plugin/jukit.vim	/^        nnoremap <leader>pd :call jukit#convert#save_nb_to_file(0,1,'pdf')<cr>$/;"	m
+<leader>rht	plugin/jukit.vim	/^        nnoremap <leader>rht :call jukit#convert#save_nb_to_file(1,1,'html')<cr>$/;"	m
+<leader>rpd	plugin/jukit.vim	/^        nnoremap <leader>rpd :call jukit#convert#save_nb_to_file(1,1,'pdf')<cr>$/;"	m
+<leader>sl	plugin/jukit.vim	/^        nnoremap <leader>sl :call jukit#layouts#set_layout()<cr>$/;"	m
+<leader>so	plugin/jukit.vim	/^        nnoremap <leader>so :call jukit#splits#show_last_cell_output(1)<cr>$/;"	m
+<leader>ts	plugin/jukit.vim	/^        nnoremap <leader>ts :call jukit#splits#term()<cr>$/;"	m
+Basic jukit options	README.md	/^###### Basic jukit options$/;"	u	subsection:vim-jukit""Usage""Options and global variables
+Basic usage in a nutshell (assuming default mappings)	README.md	/^### Basic usage in a nutshell (assuming default mappings)$/;"	S	section:vim-jukit""Usage
+CSI	helpers/imgcat/imgcat.py	/^CSI = b'\\033['$/;"	v
+Cell highlighting/syntax	README.md	/^###### Cell highlighting\/syntax$/;"	u	subsection:vim-jukit""Usage""Options and global variables
+Cells	README.md	/^###### Cells$/;"	u	subsection:vim-jukit""Usage""Functions and Default Mappings
+Commands	README.md	/^### Commands$/;"	S	section:vim-jukit""Usage
+Creating your own convenience functions	README.md	/^### Creating your own convenience functions$/;"	S	section:vim-jukit""Usage
+Credit	README.md	/^### Credit$/;"	S	section:vim-jukit""Usage
+FigureCanvas	helpers/matplotlib-backend-kitty/__init__.py	/^    FigureCanvas = JukitCanvas$/;"	v	class:JukitBackend
+FigureManager	helpers/matplotlib-backend-kitty/__init__.py	/^    FigureManager = JukitFigureManager$/;"	v	class:JukitBackend
+FigureManagerImgcat	helpers/imgcat/__init__.py	/^class FigureManagerImgcat(FigureManagerBase):$/;"	c
+FileNotFoundError	helpers/imgcat/imgcat.py	/^    FileNotFoundError = IOError  # pylint: disable=redefined-builtin$/;"	v
+Functions and Default Mappings	README.md	/^### Functions and Default Mappings$/;"	S	section:vim-jukit""Usage
+HEADER	helpers/ipynb_convert/convert.py	/^HEADER = "|%%--%%|"$/;"	v
+IPython	README.md	/^###### IPython$/;"	u	subsection:vim-jukit""Usage""Options and global variables
+IS_PY_2	helpers/imgcat/imgcat.py	/^IS_PY_2 = (sys.version_info[0] <= 2)$/;"	v
+IS_PY_3	helpers/imgcat/imgcat.py	/^IS_PY_3 = (not IS_PY_2)$/;"	v
+Installation	README.md	/^### Installation$/;"	S	section:vim-jukit""Preview
+JukitBackend	helpers/matplotlib-backend-kitty/__init__.py	/^class JukitBackend(_Backend):$/;"	c
+JukitCanvas	helpers/matplotlib-backend-kitty/__init__.py	/^class JukitCanvas(FigureCanvasAgg):$/;"	c
+JukitCaptureOutput	helpers/jukit_run/jukit_run.py	/^class JukitCaptureOutput(object):$/;"	c
+JukitFigureManager	helpers/matplotlib-backend-kitty/__init__.py	/^class JukitFigureManager(FigureManagerBase):$/;"	c
+JukitLayout	helpers/layout_kitten.py	/^class JukitLayout(Splits):$/;"	c
+JukitOut	plugin/jukit.vim	/^command! -nargs=1 JukitOut :call jukit#splits#output(<q-args>)$/;"	c
+JukitOutHist	plugin/jukit.vim	/^command! -nargs=1 JukitOutHist :call jukit#splits#output_and_history(<q-args>)$/;"	c
+JukitRun	helpers/jukit_run/jukit_run.py	/^class JukitRun(TerminalMagics):$/;"	c
+Jupyter notebook conversion - currently supported languages	README.md	/^### Jupyter notebook conversion - currently supported languages$/;"	S	section:vim-jukit""Usage
+KiB	helpers/jukit_run/util.py	/^KiB = 2 ** 10$/;"	v
+Kitty	README.md	/^###### Kitty$/;"	u	subsection:vim-jukit""Usage""Options and global variables
+MD_MARK	helpers/ipynb_convert/convert.py	/^MD_MARK = "°°°"$/;"	v
+Matplotlib	README.md	/^###### Matplotlib$/;"	u	subsection:vim-jukit""Usage""Options and global variables
+MiB	helpers/jukit_run/util.py	/^MiB = 2 ** 20$/;"	v
+MyPrompt	helpers/jukit_run/jukit_run.py	/^class MyPrompt(Prompts):$/;"	c
+Notes to be aware of	README.md	/^### Notes to be aware of$/;"	S	section:vim-jukit""Usage
+OSC	helpers/imgcat/imgcat.py	/^OSC = b'\\033]'$/;"	v
+Options and global variables	README.md	/^### Options and global variables$/;"	S	section:vim-jukit""Usage
+Preview	README.md	/^## Preview$/;"	s	chapter:vim-jukit
+REPL plugin and Jupyter-Notebook alternative for Vim and Neovim	README.md	/^## REPL plugin and Jupyter-Notebook alternative for Vim and Neovim$/;"	s	chapter:vim-jukit
+Requirements	README.md	/^### Requirements$/;"	S	section:vim-jukit""Preview
+ST	helpers/imgcat/imgcat.py	/^ST  = b'\\a'      # \\a = ^G (bell)$/;"	v
+Sending code	README.md	/^###### Sending code$/;"	u	subsection:vim-jukit""Usage""Functions and Default Mappings
+Split layout	README.md	/^###### Split layout$/;"	u	subsection:vim-jukit""Usage""Options and global variables
+Splits	README.md	/^###### Splits$/;"	u	subsection:vim-jukit""Usage""Functions and Default Mappings
+StringIOWrapper	helpers/jukit_run/jukit_run.py	/^class StringIOWrapper(object):$/;"	c
+TMUX_WRAP_ED	helpers/imgcat/imgcat.py	/^TMUX_WRAP_ED = b'\\033\\\\'$/;"	v
+TMUX_WRAP_ST	helpers/imgcat/imgcat.py	/^TMUX_WRAP_ST = b'\\033Ptmux;'$/;"	v
+Usage	README.md	/^## Usage$/;"	s	chapter:vim-jukit
+__all__	helpers/jukit_run/__init__.py	/^__all__ = ['StringIOWrapper', 'JukitRun']$/;"	v
+__enter__	helpers/jukit_run/jukit_run.py	/^    def __enter__(self):$/;"	m	class:JukitCaptureOutput
+__enter__	helpers/jukit_run/jukit_run.py	/^    def __enter__(self):$/;"	m	class:monitor_execution_count
+__exit__	helpers/jukit_run/jukit_run.py	/^    def __exit__(self, *_):$/;"	m	class:JukitCaptureOutput
+__exit__	helpers/jukit_run/jukit_run.py	/^    def __exit__(self, *_):$/;"	m	class:monitor_execution_count
+__getattr__	helpers/jukit_run/jukit_run.py	/^    def __getattr__(self, attr):$/;"	m	class:StringIOWrapper
+__init__	helpers/jukit_run/jukit_run.py	/^    def __init__($/;"	m	class:StringIOWrapper
+__init__	helpers/jukit_run/jukit_run.py	/^    def __init__(self, max_plots_size: int, cell_id: Optional[str] = None):$/;"	m	class:JukitCaptureOutput
+__init__	helpers/jukit_run/jukit_run.py	/^    def __init__(self, shell):$/;"	m	class:JukitRun
+__init__	helpers/jukit_run/jukit_run.py	/^    def __init__(self, shell):$/;"	m	class:monitor_execution_count
+__init__	helpers/layout_kitten.py	/^    def __init__(self, os_window_id: int, tab_id: int, layout: dict, id_map: dict):$/;"	m	class:JukitLayout
+_add_ws	helpers/jukit_run/util.py	/^def _add_ws(x: int, str_: str, offset: int = 0, center: bool = True) -> str:$/;"	f	typeref:typename:str
+_fix_db	helpers/jukit_run/jukit_run.py	/^def _fix_db(shell):$/;"	f
+_get_id_map	helpers/layout_kitten.py	/^def _get_id_map(splits: dict, boss: Boss) -> dict:$/;"	f	typeref:typename:dict
+_get_info_json_keys	helpers/jukit_run/jukit_run.py	/^    def _get_info_json_keys(self, *keys: str) -> list:$/;"	m	class:JukitRun	typeref:typename:list
+_isinstance	helpers/imgcat/imgcat.py	/^def _isinstance(obj, module, clsname):$/;"	f
+_pair_from_layout	helpers/layout_kitten.py	/^    def _pair_from_layout(self, ld):$/;"	m	class:JukitLayout
+_parse_arglist	helpers/layout_kitten.py	/^def _parse_arglist(arglist: list) -> Tuple[dict, dict]:$/;"	f	typeref:typename:Tuple[dict,dict]
+_set_tab_layout	helpers/layout_kitten.py	/^def _set_tab_layout(tab, layout):$/;"	f
+_store_img_for_ipynb	helpers/imgcat/__init__.py	/^def _store_img_for_ipynb(img_hex_code):$/;"	f
+_store_img_for_ipynb	helpers/matplotlib-backend-kitty/__init__.py	/^def _store_img_for_ipynb(img_hex_code):$/;"	f
+_store_img_for_ipynb	helpers/matplotlib_show_wrapper/__init__.py	/^def _store_img_for_ipynb(img_hex_code):$/;"	f
+_unpack	helpers/imgcat/imgcat.py	/^    def _unpack(fmt, buffer, mode='Image'):$/;"	f	function:get_image_shape	file:
+_wrapped	helpers/matplotlib_show_wrapper/__init__.py	/^    def _wrapped(*args, **kwargs):$/;"	f	function:show_wrapper	file:
+_write_to_info_json	helpers/jukit_run/jukit_run.py	/^    def _write_to_info_json(self, key: str, val: Any):$/;"	m	class:JukitRun
+add_jukit_plot	helpers/jukit_run/jukit_run.py	/^    def add_jukit_plot(self, b64):$/;"	m	class:StringIOWrapper
+add_to_output_history	helpers/ipynb_convert/util.py	/^def add_to_output_history(out_str, cell_id, outhist_file, exec_result):$/;"	f
+apply_layout	helpers/layout_kitten.py	/^def apply_layout(splits: dict, layout: dict, boss: Boss):$/;"	f
+build_kitty_cmd	helpers/matplotlib-backend-kitty/__init__.py	/^def build_kitty_cmd(*cmd):$/;"	f
+catch_load_json	helpers/jukit_run/util.py	/^def catch_load_json($/;"	f	typeref:typename:dict
+check_output_size	helpers/jukit_run/util.py	/^def check_output_size(captured_out: str, outhist_file: str, max_bytes: int) -> str:$/;"	f	typeref:typename:str
+clear_obsolete_output	helpers/ipynb_convert/util.py	/^def clear_obsolete_output(current_ids, outhist_file):$/;"	f
+convert	helpers/ipynb_convert/convert.py	/^def convert(in_file, language, jukit_copy, create=True):$/;"	f
+copy_output	helpers/ipynb_convert/util.py	/^def copy_output(from_id: str, to_ids: Union[str, list], outhist_file: str):$/;"	f
+create_output_history	helpers/ipynb_convert/util.py	/^def create_output_history(outhist_file, nb=None):$/;"	f
+delete_cell_output	helpers/ipynb_convert/util.py	/^def delete_cell_output(outhist_file, cell_id=None):$/;"	f
+display_cell_id	helpers/jukit_run/util.py	/^def display_cell_id(cell_id: str, term_width: int, min_frame_width: int = 25):$/;"	f
+display_functions	helpers/jukit_run/input_styles.py	/^display_functions = {$/;"	v
+display_outputs	helpers/jukit_run/util.py	/^def display_outputs(outputs: List[dict], term: str, shell: InteractiveShell):$/;"	f
+display_style_0	helpers/jukit_run/input_styles.py	/^def display_style_0(cmd, shell):$/;"	f
+display_style_1	helpers/jukit_run/input_styles.py	/^def display_style_1(cmd, shell):$/;"	f
+display_style_2	helpers/jukit_run/input_styles.py	/^def display_style_2(cmd, shell):$/;"	f
+display_style_3	helpers/jukit_run/input_styles.py	/^def display_style_3(cmd, shell):$/;"	f
+display_style_4	helpers/jukit_run/input_styles.py	/^def display_style_4(cmd, shell):$/;"	f
+do_layout	helpers/layout_kitten.py	/^    def do_layout(self, all_windows):$/;"	m	class:JukitLayout
+f	helpers/matplotlib-backend-kitty/__init__.py	/^    def f(*args, output=True, **kwargs):$/;"	f	function:build_kitty_cmd	file:
+fuzzy_match	helpers/ipynb_convert/util.py	/^def fuzzy_match(s, t):$/;"	f
+g:_jukit_main_buf	autoload/jukit/nvimterm/splits.vim	/^    let g:_jukit_main_buf = bufnr('%', 1)$/;"	v
+g:_jukit_main_buf	autoload/jukit/vimterm/splits.vim	/^    let g:_jukit_main_buf = bufnr('%', 1)$/;"	v
+g:_jukit_md_mark	plugin/jukit.vim	/^let g:_jukit_md_mark = '°°°'$/;"	v
+g:_jukit_python	autoload/jukit/kitty/splits.vim	/^    let g:_jukit_python = 0$/;"	v
+g:_jukit_python	autoload/jukit/nvimterm/splits.vim	/^    let g:_jukit_python = 0$/;"	v
+g:_jukit_python	autoload/jukit/splits.vim	/^        let g:_jukit_python = stridx(split(g:jukit_shell_cmd, '\/')[-1], 'python') >= 0$/;"	v
+g:_jukit_python	autoload/jukit/tmux/splits.vim	/^    let g:_jukit_python = 0$/;"	v
+g:_jukit_python	autoload/jukit/vimterm/splits.vim	/^    let g:_jukit_python = 0$/;"	v
+g:_jukit_python	plugin/jukit.vim	/^let g:_jukit_python = split(g:jukit_shell_cmd, '\/')[-1] =~ 'python'$/;"	v
+g:jukit_auto_output_hist	plugin/jukit.vim	/^let g:jukit_auto_output_hist = get(g:, 'jukit_auto_output_hist', 0)$/;"	v
+g:jukit_clean_outhist_freq	plugin/jukit.vim	/^let g:jukit_clean_outhist_freq = get(g:, 'jukit_clean_outhist_freq', 60 * 10)$/;"	v
+g:jukit_comment_mark	plugin/jukit.vim	/^let g:jukit_comment_mark = get(g:, 'jukit_comment_mark', '#')$/;"	v
+g:jukit_custom_backend	plugin/jukit.vim	/^let g:jukit_custom_backend = get(g:, 'jukit_custom_backend', -1)$/;"	v
+g:jukit_debug	plugin/jukit.vim	/^let g:jukit_debug = get(g:, 'jukit_debug', 0)$/;"	v
+g:jukit_enable_textcell_bg_hl	plugin/jukit.vim	/^let g:jukit_enable_textcell_bg_hl = get(g:, 'jukit_enable_textcell_bg_hl', 1)$/;"	v
+g:jukit_enable_textcell_syntax	plugin/jukit.vim	/^let g:jukit_enable_textcell_syntax = get(g:, 'jukit_enable_textcell_syntax', 1)$/;"	v
+g:jukit_highlight_markers	plugin/jukit.vim	/^let g:jukit_highlight_markers = get(g:, 'jukit_highlight_markers', 1)$/;"	v
+g:jukit_hl_ext_enabled	plugin/jukit.vim	/^    let g:jukit_hl_ext_enabled = [g:jukit_hl_ext_enabled]$/;"	v
+g:jukit_hl_ext_enabled	plugin/jukit.vim	/^let g:jukit_hl_ext_enabled = get(g:, 'jukit_hl_ext_enabled', '*')$/;"	v
+g:jukit_in_style	plugin/jukit.vim	/^let g:jukit_in_style = get(g:, 'jukit_in_style', 2)$/;"	v
+g:jukit_inline_plotting	autoload/jukit/splits.vim	/^    let g:jukit_inline_plotting = 0$/;"	v
+g:jukit_inline_plotting	plugin/jukit.vim	/^        let g:jukit_inline_plotting = 0$/;"	v
+g:jukit_inline_plotting	plugin/jukit.vim	/^        let g:jukit_inline_plotting = 1$/;"	v
+g:jukit_ipy_opts	plugin/jukit.vim	/^let g:jukit_ipy_opts = get(g:, 'jukit_ipy_opts', '')$/;"	v
+g:jukit_ipython	autoload/jukit/splits.vim	/^        let g:jukit_ipython = stridx(split(g:jukit_shell_cmd, '\/')[-1], 'ipython') >= 0$/;"	v
+g:jukit_ipython	plugin/jukit.vim	/^let g:jukit_ipython = get(g:, 'jukit_ipython', split(g:jukit_shell_cmd, '\/')[-1] =~ 'ipython')$/;"	v
+g:jukit_layout	plugin/jukit.vim	/^let g:jukit_layout = get(g:, 'jukit_layout', s:default_layout)$/;"	v
+g:jukit_mappings	plugin/jukit.vim	/^let g:jukit_mappings = get(g:, 'jukit_mappings', 1)$/;"	v
+g:jukit_max_size	plugin/jukit.vim	/^let g:jukit_max_size = get(g:, 'jukit_max_size', 20)$/;"	v
+g:jukit_mpl_block	plugin/jukit.vim	/^let g:jukit_mpl_block = get(g:, 'jukit_mpl_block', 1)$/;"	v
+g:jukit_mpl_style	autoload/jukit/splits.vim	/^        let g:jukit_mpl_style = jukit#util#plugin_path()$/;"	v
+g:jukit_mpl_style	plugin/jukit.vim	/^let g:jukit_mpl_style = get(g:, 'jukit_mpl_style', '') "this value is changed for kitty after ve/;"	v
+g:jukit_outhist_bg_color	plugin/jukit.vim	/^let g:jukit_outhist_bg_color = get(g:, 'jukit_outhist_bg_color', '#090b1a')$/;"	v
+g:jukit_outhist_buf	autoload/jukit/nvimterm/splits.vim	/^    let g:jukit_outhist_buf = ids[1]$/;"	v
+g:jukit_outhist_fg_color	plugin/jukit.vim	/^let g:jukit_outhist_fg_color = get(g:, 'jukit_outhist_fg_color', 'gray')$/;"	v
+g:jukit_outhist_last_cell	autoload/jukit/kitty/splits.vim	/^        let g:jukit_outhist_last_cell = -1$/;"	v
+g:jukit_outhist_last_cell	autoload/jukit/kitty/splits.vim	/^    let g:jukit_outhist_last_cell = -1$/;"	v
+g:jukit_outhist_last_cell	autoload/jukit/kitty/splits.vim	/^    let g:jukit_outhist_last_cell = cell_id$/;"	v
+g:jukit_outhist_last_cell	autoload/jukit/nvimterm/splits.vim	/^        let g:jukit_outhist_last_cell = -1$/;"	v
+g:jukit_outhist_last_cell	autoload/jukit/nvimterm/splits.vim	/^    let g:jukit_outhist_last_cell = -1$/;"	v
+g:jukit_outhist_last_cell	autoload/jukit/nvimterm/splits.vim	/^    let g:jukit_outhist_last_cell = cell_id$/;"	v
+g:jukit_outhist_last_cell	autoload/jukit/tmux/splits.vim	/^        let g:jukit_outhist_last_cell = -1$/;"	v
+g:jukit_outhist_last_cell	autoload/jukit/tmux/splits.vim	/^    let g:jukit_outhist_last_cell = -1$/;"	v
+g:jukit_outhist_last_cell	autoload/jukit/tmux/splits.vim	/^    let g:jukit_outhist_last_cell = cell_id$/;"	v
+g:jukit_outhist_last_cell	autoload/jukit/vimterm/splits.vim	/^        let g:jukit_outhist_last_cell = -1$/;"	v
+g:jukit_outhist_last_cell	autoload/jukit/vimterm/splits.vim	/^    let g:jukit_outhist_last_cell = -1$/;"	v
+g:jukit_outhist_last_cell	autoload/jukit/vimterm/splits.vim	/^    let g:jukit_outhist_last_cell = cell_id$/;"	v
+g:jukit_outhist_new_os_window	plugin/jukit.vim	/^let g:jukit_outhist_new_os_window = get(g:, 'jukit_outhist_new_os_window', 0)$/;"	v
+g:jukit_outhist_title	autoload/jukit/kitty/splits.vim	/^    let g:jukit_outhist_title=jukit#util#get_unique_id()$/;"	v
+g:jukit_outhist_title	autoload/jukit/nvimterm/splits.vim	/^    let g:jukit_outhist_title = ids[0]$/;"	v
+g:jukit_outhist_title	autoload/jukit/tmux/splits.vim	/^    let g:jukit_outhist_title = matchstr(response, '%\\d\\{1,}\\ze')$/;"	v
+g:jukit_outhist_title	autoload/jukit/vimterm/splits.vim	/^    let g:jukit_outhist_title = s:setup_term()$/;"	v
+g:jukit_output_bg_color	plugin/jukit.vim	/^let g:jukit_output_bg_color = get(g:, 'jukit_output_bg_color', '')$/;"	v
+g:jukit_output_buf	autoload/jukit/nvimterm/splits.vim	/^    let g:jukit_output_buf = ids[1]$/;"	v
+g:jukit_output_fg_color	plugin/jukit.vim	/^let g:jukit_output_fg_color = get(g:, 'jukit_output_fg_color', '')$/;"	v
+g:jukit_output_new_os_window	plugin/jukit.vim	/^let g:jukit_output_new_os_window = get(g:, 'jukit_output_new_os_window', 0)$/;"	v
+g:jukit_output_title	autoload/jukit/kitty/splits.vim	/^    let g:jukit_output_title=jukit#util#get_unique_id()$/;"	v
+g:jukit_output_title	autoload/jukit/nvimterm/splits.vim	/^    let g:jukit_output_title = ids[0]$/;"	v
+g:jukit_output_title	autoload/jukit/tmux/splits.vim	/^    let g:jukit_output_title = matchstr(response, '[a-zA-Z]\\+:[0-9]*\\.[0-9]\\+')$/;"	v
+g:jukit_output_title	autoload/jukit/vimterm/splits.vim	/^    let g:jukit_output_title = s:setup_term()$/;"	v
+g:jukit_required_ipython_version	plugin/jukit.vim	/^let g:jukit_required_ipython_version = [7,3,0]$/;"	v
+g:jukit_required_kitty_version	plugin/jukit.vim	/^let g:jukit_required_kitty_version = [0,22,0]$/;"	v
+g:jukit_required_neovim_version	plugin/jukit.vim	/^let g:jukit_required_neovim_version = [0,4,0]$/;"	v
+g:jukit_required_vim_version	plugin/jukit.vim	/^let g:jukit_required_vim_version = [8,1,0]$/;"	v
+g:jukit_save_output	plugin/jukit.vim	/^let g:jukit_save_output = get(g:, 'jukit_save_output', g:jukit_ipython)$/;"	v
+g:jukit_savefig_dpi	plugin/jukit.vim	/^let g:jukit_savefig_dpi = get(g:, 'jukit_savefig_dpi', 150)$/;"	v
+g:jukit_shell_cmd	plugin/jukit.vim	/^let g:jukit_shell_cmd = get(g:, 'jukit_shell_cmd', 'ipython3')$/;"	v
+g:jukit_show_prompt	plugin/jukit.vim	/^let g:jukit_show_prompt = get(g:, 'jukit_show_prompt', 0)$/;"	v
+g:jukit_terminal	autoload/jukit/splits.vim	/^        let g:jukit_terminal = 'nvimterm'$/;"	v
+g:jukit_terminal	autoload/jukit/splits.vim	/^        let g:jukit_terminal = 'vimterm'$/;"	v
+g:jukit_terminal	plugin/jukit.vim	/^        let g:jukit_terminal = 'nvimterm'$/;"	v
+g:jukit_terminal	plugin/jukit.vim	/^        let g:jukit_terminal = 'vimterm'$/;"	v
+g:jukit_terminal	plugin/jukit.vim	/^    let g:jukit_terminal = jukit#util#get_terminal()$/;"	v
+g:jukit_terminal	plugin/jukit.vim	/^let g:jukit_terminal = get(g:, 'jukit_terminal', '')$/;"	v
+g:jukit_text_syntax_file	plugin/jukit.vim	/^let g:jukit_text_syntax_file = get(g:, 'jukit_text_syntax_file', $VIMRUNTIME . '\/syntax\/' . 'm/;"	v
+g:jukit_use_tcomment	plugin/jukit.vim	/^let g:jukit_use_tcomment = get(g:, 'jukit_use_tcomment', 0)$/;"	v
+g:jukit_version	plugin/jukit.vim	/^let g:jukit_version = 'v1.1.0'$/;"	v
+g:ntries	autoload/jukit/util.vim	/^            let g:ntries = a:ntries_left$/;"	v
+generate_cell_ids	helpers/ipynb_convert/util.py	/^def generate_cell_ids(num):$/;"	f
+get_image_shape	helpers/imgcat/imgcat.py	/^def get_image_shape(buf):$/;"	f
+get_json	helpers/ipynb_convert/util.py	/^def get_json(file):$/;"	f
+get_nb_and_language	helpers/ipynb_convert/util.py	/^def get_nb_and_language(nb, lang_dict):$/;"	f
+get_tty_size	helpers/imgcat/imgcat.py	/^def get_tty_size():$/;"	f
+handle_result	helpers/layout_kitten.py	/^def handle_result($/;"	f	typeref:typename:None
+hide_prompt	helpers/jukit_run/util.py	/^def hide_prompt(shell: InteractiveShell):$/;"	f
+icat	helpers/matplotlib-backend-kitty/__init__.py	/^icat = build_kitty_cmd("kitty", "+kitten", "icat")$/;"	v
+imgcat	helpers/imgcat/imgcat.py	/^def imgcat(data, filename=None,$/;"	f
+in_prompt_tokens	helpers/jukit_run/jukit_run.py	/^    def in_prompt_tokens(self):$/;"	m	class:MyPrompt
+ipynb conversion	README.md	/^###### ipynb conversion$/;"	u	subsection:vim-jukit""Usage""Functions and Default Mappings
+isVisible	helpers/matplotlib-backend-kitty/__init__.py	/^    def isVisible(self):$/;"	m	class:JukitCanvas
+jukit#NewMarker	autoload/jukit.vim	/^fun! jukit#NewMarker()$/;"	f
+jukit#NotebookConvert	autoload/jukit.vim	/^fun! jukit#NotebookConvert()$/;"	f
+jukit#PythonHelp	autoload/jukit.vim	/^fun! jukit#PythonHelp()$/;"	f
+jukit#PythonSplit	autoload/jukit.vim	/^fun! jukit#PythonSplit()$/;"	f
+jukit#SaveNBToFile	autoload/jukit.vim	/^fun! jukit#SaveNBToFile(arg1, arg2, arg3)$/;"	f
+jukit#SendAll	autoload/jukit.vim	/^fun! jukit#SendAll()$/;"	f
+jukit#SendLine	autoload/jukit.vim	/^fun! jukit#SendLine()$/;"	f
+jukit#SendSection	autoload/jukit.vim	/^fun! jukit#SendSection()$/;"	f
+jukit#SendSelection	autoload/jukit.vim	/^fun! jukit#SendSelection()$/;"	f
+jukit#SendUntilCurrentSection	autoload/jukit.vim	/^fun! jukit#SendUntilCurrentSection()$/;"	f
+jukit#WindowSplit	autoload/jukit.vim	/^fun! jukit#WindowSplit()$/;"	f
+jukit#cells#create_above	autoload/jukit/cells.vim	/^fun! jukit#cells#create_above(markdown) abort$/;"	f
+jukit#cells#create_below	autoload/jukit/cells.vim	/^fun! jukit#cells#create_below(markdown) abort$/;"	f
+jukit#cells#delete	autoload/jukit/cells.vim	/^fun! jukit#cells#delete() abort$/;"	f
+jukit#cells#delete_outputs	autoload/jukit/cells.vim	/^fun! jukit#cells#delete_outputs(all) abort$/;"	f
+jukit#cells#merge_above	autoload/jukit/cells.vim	/^fun! jukit#cells#merge_above() abort$/;"	f
+jukit#cells#merge_below	autoload/jukit/cells.vim	/^fun! jukit#cells#merge_below() abort$/;"	f
+jukit#cells#move_down	autoload/jukit/cells.vim	/^fun! jukit#cells#move_down() abort$/;"	f
+jukit#cells#move_up	autoload/jukit/cells.vim	/^fun! jukit#cells#move_up() abort$/;"	f
+jukit#cells#split	autoload/jukit/cells.vim	/^fun! jukit#cells#split() abort$/;"	f
+jukit#check_ids	autoload/jukit.vim	/^fun! jukit#check_ids() abort$/;"	f
+jukit#convert#notebook_convert	autoload/jukit/convert.vim	/^fun! jukit#convert#notebook_convert(...) abort$/;"	f
+jukit#convert#save_nb_to_file	autoload/jukit/convert.vim	/^fun! jukit#convert#save_nb_to_file(run, open, to) abort$/;"	f
+jukit#highlight_markers	autoload/jukit.vim	/^fun! jukit#highlight_markers(force) abort$/;"	f
+jukit#highlighting_setup	autoload/jukit.vim	/^fun! jukit#highlighting_setup(aupat) abort$/;"	f
+jukit#kitty#cmd#close_window	autoload/jukit/kitty/cmd.vim	/^fun! jukit#kitty#cmd#close_window(win_title) abort$/;"	f
+jukit#kitty#cmd#invalid_version	autoload/jukit/kitty/cmd.vim	/^fun! jukit#kitty#cmd#invalid_version(vreq) abort$/;"	f
+jukit#kitty#cmd#kitty_command	autoload/jukit/kitty/cmd.vim	/^fun! jukit#kitty#cmd#kitty_command(...) abort$/;"	f
+jukit#kitty#cmd#launch	autoload/jukit/kitty/cmd.vim	/^fun! jukit#kitty#cmd#launch(win_title, ...) abort$/;"	f
+jukit#kitty#cmd#send_text	autoload/jukit/kitty/cmd.vim	/^fun! jukit#kitty#cmd#send_text(win_title, text) abort$/;"	f
+jukit#kitty#layouts#set_layout	autoload/jukit/kitty/layouts.vim	/^fun! jukit#kitty#layouts#set_layout(layout) abort$/;"	f
+jukit#kitty#splits#close_history	autoload/jukit/kitty/splits.vim	/^fun! jukit#kitty#splits#close_history() abort$/;"	f
+jukit#kitty#splits#close_output_split	autoload/jukit/kitty/splits.vim	/^fun! jukit#kitty#splits#close_output_split() abort$/;"	f
+jukit#kitty#splits#exists	autoload/jukit/kitty/splits.vim	/^fun! jukit#kitty#splits#exists(...) abort$/;"	f
+jukit#kitty#splits#history	autoload/jukit/kitty/splits.vim	/^fun! jukit#kitty#splits#history() abort$/;"	f
+jukit#kitty#splits#out_hist_scroll	autoload/jukit/kitty/splits.vim	/^fun! jukit#kitty#splits#out_hist_scroll(down) abort$/;"	f
+jukit#kitty#splits#output	autoload/jukit/kitty/splits.vim	/^fun! jukit#kitty#splits#output(...) abort$/;"	f
+jukit#kitty#splits#show_last_cell_output	autoload/jukit/kitty/splits.vim	/^fun! jukit#kitty#splits#show_last_cell_output(force) abort$/;"	f
+jukit#kitty#splits#term	autoload/jukit/kitty/splits.vim	/^fun! jukit#kitty#splits#term(...) abort$/;"	f
+jukit#layouts#set_layout	autoload/jukit/layouts.vim	/^fun! jukit#layouts#set_layout(...) abort$/;"	f
+jukit#nvimterm#layouts#set_layout	autoload/jukit/nvimterm/layouts.vim	/^fun! jukit#nvimterm#layouts#set_layout(layout) abort$/;"	f
+jukit#nvimterm#splits#close_history	autoload/jukit/nvimterm/splits.vim	/^fun! jukit#nvimterm#splits#close_history() abort$/;"	f
+jukit#nvimterm#splits#close_output_split	autoload/jukit/nvimterm/splits.vim	/^fun! jukit#nvimterm#splits#close_output_split() abort$/;"	f
+jukit#nvimterm#splits#exists	autoload/jukit/nvimterm/splits.vim	/^fun! jukit#nvimterm#splits#exists(...) abort$/;"	f
+jukit#nvimterm#splits#history	autoload/jukit/nvimterm/splits.vim	/^fun! jukit#nvimterm#splits#history() abort$/;"	f
+jukit#nvimterm#splits#out_hist_scroll	autoload/jukit/nvimterm/splits.vim	/^fun! jukit#nvimterm#splits#out_hist_scroll(down) abort$/;"	f
+jukit#nvimterm#splits#output	autoload/jukit/nvimterm/splits.vim	/^fun! jukit#nvimterm#splits#output(...) abort$/;"	f
+jukit#nvimterm#splits#show_last_cell_output	autoload/jukit/nvimterm/splits.vim	/^fun! jukit#nvimterm#splits#show_last_cell_output(force) abort$/;"	f
+jukit#nvimterm#splits#term	autoload/jukit/nvimterm/splits.vim	/^fun! jukit#nvimterm#splits#term() abort$/;"	f
+jukit#place_markdown_cell_signs	autoload/jukit.vim	/^fun! jukit#place_markdown_cell_signs(force) abort$/;"	f
+jukit#send#all	autoload/jukit/send.vim	/^fun! jukit#send#all() abort$/;"	f
+jukit#send#clean_output_history	autoload/jukit/send.vim	/^fun! jukit#send#clean_output_history(...) abort$/;"	f
+jukit#send#line	autoload/jukit/send.vim	/^fun! jukit#send#line() abort$/;"	f
+jukit#send#section	autoload/jukit/send.vim	/^fun! jukit#send#section(move_next) abort$/;"	f
+jukit#send#selection	autoload/jukit/send.vim	/^fun! jukit#send#selection() abort$/;"	f
+jukit#send#send_to_split	autoload/jukit/send.vim	/^fun! jukit#send#send_to_split(code) abort$/;"	f
+jukit#send#until_current_section	autoload/jukit/send.vim	/^fun! jukit#send#until_current_section() abort$/;"	f
+jukit#splits#_build_shell_cmd	autoload/jukit/splits.vim	/^fun! jukit#splits#_build_shell_cmd(...) abort$/;"	f
+jukit#splits#_get_mpl_style_file	autoload/jukit/splits.vim	/^fun! jukit#splits#_get_mpl_style_file() abort$/;"	f
+jukit#splits#close_history	autoload/jukit/splits.vim	/^fun! jukit#splits#close_history() abort$/;"	f
+jukit#splits#close_output_and_history	autoload/jukit/splits.vim	/^fun! jukit#splits#close_output_and_history(confirm) abort$/;"	f
+jukit#splits#close_output_split	autoload/jukit/splits.vim	/^fun! jukit#splits#close_output_split() abort$/;"	f
+jukit#splits#history	autoload/jukit/splits.vim	/^fun! jukit#splits#history() abort$/;"	f
+jukit#splits#out_hist_scroll	autoload/jukit/splits.vim	/^fun! jukit#splits#out_hist_scroll(down) abort$/;"	f
+jukit#splits#output	autoload/jukit/splits.vim	/^fun! jukit#splits#output(...) abort$/;"	f
+jukit#splits#output_and_history	autoload/jukit/splits.vim	/^fun! jukit#splits#output_and_history(...) abort$/;"	f
+jukit#splits#show_last_cell_output	autoload/jukit/splits.vim	/^fun! jukit#splits#show_last_cell_output(force) abort$/;"	f
+jukit#splits#split_exists	autoload/jukit/splits.vim	/^fun! jukit#splits#split_exists(...) abort$/;"	f
+jukit#splits#term	autoload/jukit/splits.vim	/^fun! jukit#splits#term() abort$/;"	f
+jukit#splits#toggle_auto_hist	autoload/jukit/splits.vim	/^fun! jukit#splits#toggle_auto_hist(...) abort$/;"	f
+jukit#tmux#cmd#close_window	autoload/jukit/tmux/cmd.vim	/^fun! jukit#tmux#cmd#close_window(win_title) abort$/;"	f
+jukit#tmux#cmd#invalid_version	autoload/jukit/tmux/cmd.vim	/^fun! jukit#tmux#cmd#invalid_version(vreq) abort$/;"	f
+jukit#tmux#cmd#launch	autoload/jukit/tmux/cmd.vim	/^fun! jukit#tmux#cmd#launch(...) abort$/;"	f
+jukit#tmux#cmd#pane_exists	autoload/jukit/tmux/cmd.vim	/^fun! jukit#tmux#cmd#pane_exists(pane)$/;"	f
+jukit#tmux#cmd#send_text	autoload/jukit/tmux/cmd.vim	/^fun! jukit#tmux#cmd#send_text(pane, text) abort$/;"	f
+jukit#tmux#cmd#tmux_command	autoload/jukit/tmux/cmd.vim	/^fun! jukit#tmux#cmd#tmux_command(...) abort$/;"	f
+jukit#tmux#layouts#set_layout	autoload/jukit/tmux/layouts.vim	/^fun! jukit#tmux#layouts#set_layout(layout) abort$/;"	f
+jukit#tmux#splits#close_history	autoload/jukit/tmux/splits.vim	/^fun! jukit#tmux#splits#close_history() abort$/;"	f
+jukit#tmux#splits#close_output_split	autoload/jukit/tmux/splits.vim	/^fun! jukit#tmux#splits#close_output_split() abort$/;"	f
+jukit#tmux#splits#exists	autoload/jukit/tmux/splits.vim	/^fun! jukit#tmux#splits#exists(...) abort$/;"	f
+jukit#tmux#splits#history	autoload/jukit/tmux/splits.vim	/^fun! jukit#tmux#splits#history() abort$/;"	f
+jukit#tmux#splits#out_hist_scroll	autoload/jukit/tmux/splits.vim	/^fun! jukit#tmux#splits#out_hist_scroll(down) abort$/;"	f
+jukit#tmux#splits#output	autoload/jukit/tmux/splits.vim	/^fun! jukit#tmux#splits#output(...) abort$/;"	f
+jukit#tmux#splits#show_last_cell_output	autoload/jukit/tmux/splits.vim	/^fun! jukit#tmux#splits#show_last_cell_output(force) abort$/;"	f
+jukit#tmux#splits#term	autoload/jukit/tmux/splits.vim	/^fun! jukit#tmux#splits#term(...) abort$/;"	f
+jukit#util#catch_load_json	autoload/jukit/util.vim	/^fun! jukit#util#catch_load_json(file, ntries_left, time_between) abort$/;"	f
+jukit#util#get_adjacent_markers	autoload/jukit/util.vim	/^fun! jukit#util#get_adjacent_markers() abort$/;"	f
+jukit#util#get_all_ids	autoload/jukit/util.vim	/^fun! jukit#util#get_all_ids() abort$/;"	f
+jukit#util#get_current_cell_id	autoload/jukit/util.vim	/^fun! jukit#util#get_current_cell_id() abort$/;"	f
+jukit#util#get_lang_info	autoload/jukit/util.vim	/^fun! jukit#util#get_lang_info() abort$/;"	f
+jukit#util#get_marker_above	autoload/jukit/util.vim	/^fun! jukit#util#get_marker_above() abort$/;"	f
+jukit#util#get_marker_below	autoload/jukit/util.vim	/^fun! jukit#util#get_marker_below() abort$/;"	f
+jukit#util#get_terminal	autoload/jukit/util.vim	/^fun! jukit#util#get_terminal() abort$/;"	f
+jukit#util#get_unique_id	autoload/jukit/util.vim	/^fun! jukit#util#get_unique_id() abort$/;"	f
+jukit#util#get_visual_selection	autoload/jukit/util.vim	/^fun! jukit#util#get_visual_selection() abort$/;"	f
+jukit#util#ipython_info_get	autoload/jukit/util.vim	/^fun! jukit#util#ipython_info_get(keys, ...) abort$/;"	f
+jukit#util#ipython_info_write	autoload/jukit/util.vim	/^fun! jukit#util#ipython_info_write(keys, texts) abort$/;"	f
+jukit#util#is_valid_version	autoload/jukit/util.vim	/^fun! jukit#util#is_valid_version(vcur, vreq) abort$/;"	f
+jukit#util#md_buffer_vars	autoload/jukit/util.vim	/^fun! jukit#util#md_buffer_vars() abort$/;"	f
+jukit#util#plugin_path	autoload/jukit/util.vim	/^fun! jukit#util#plugin_path() abort$/;"	f
+jukit#util#replace_old_markers	autoload/jukit/util.vim	/^fun! jukit#util#replace_old_markers() abort$/;"	f
+jukit#vimterm#layouts#set_layout	autoload/jukit/vimterm/layouts.vim	/^fun! jukit#vimterm#layouts#set_layout(layout) abort$/;"	f
+jukit#vimterm#splits#close_history	autoload/jukit/vimterm/splits.vim	/^fun! jukit#vimterm#splits#close_history() abort$/;"	f
+jukit#vimterm#splits#close_output_split	autoload/jukit/vimterm/splits.vim	/^fun! jukit#vimterm#splits#close_output_split() abort$/;"	f
+jukit#vimterm#splits#exists	autoload/jukit/vimterm/splits.vim	/^fun! jukit#vimterm#splits#exists(...) abort$/;"	f
+jukit#vimterm#splits#history	autoload/jukit/vimterm/splits.vim	/^fun! jukit#vimterm#splits#history() abort$/;"	f
+jukit#vimterm#splits#out_hist_scroll	autoload/jukit/vimterm/splits.vim	/^fun! jukit#vimterm#splits#out_hist_scroll(down) abort$/;"	f
+jukit#vimterm#splits#output	autoload/jukit/vimterm/splits.vim	/^fun! jukit#vimterm#splits#output(...) abort$/;"	f
+jukit#vimterm#splits#show_last_cell_output	autoload/jukit/vimterm/splits.vim	/^fun! jukit#vimterm#splits#show_last_cell_output(force) abort$/;"	f
+jukit#vimterm#splits#term	autoload/jukit/vimterm/splits.vim	/^fun! jukit#vimterm#splits#term() abort$/;"	f
+jukit_auto_close	autoload/jukit/splits.vim	/^    augroup jukit_auto_close$/;"	a
+jukit_auto_output	autoload/jukit/splits.vim	/^        augroup jukit_auto_output$/;"	a
+jukit_capture	helpers/jukit_run/jukit_run.py	/^    def jukit_capture(self, param: str, cell: str):$/;"	m	class:JukitRun
+jukit_clean_outhist	autoload/jukit/send.vim	/^    augroup jukit_clean_outhist$/;"	a
+jukit_info	helpers/jukit_run/util.py	/^def jukit_info(text: str, color: str = "\\u001b[31m"):$/;"	f
+jukit_init	helpers/jukit_run/jukit_run.py	/^    def jukit_init(self, param: str):$/;"	m	class:JukitRun
+jukit_out_hist	helpers/jukit_run/jukit_run.py	/^    def jukit_out_hist(self, _):$/;"	m	class:JukitRun
+jukit_run	helpers/jukit_run/jukit_run.py	/^    def jukit_run(self, cmd_param: Optional[str] = None):$/;"	m	class:JukitRun
+jukit_run_split	helpers/jukit_run/jukit_run.py	/^    def jukit_run_split(self, _):$/;"	m	class:JukitRun
+jukit_show	helpers/matplotlib-backend-kitty/__init__.py	/^    def jukit_show(self, scaling=0.75, align="center"):$/;"	m	class:JukitFigureManager
+lang	helpers/ipynb_convert/convert.py	/^    from .languages import languages as lang$/;"	x	nameref:unknown:languages
+lang	helpers/ipynb_convert/convert.py	/^    from languages import languages as lang$/;"	x	nameref:unknown:languages
+languages	helpers/ipynb_convert/languages.py	/^languages = {$/;"	v
+load_ipython_extension	helpers/jukit_run/__init__.py	/^def load_ipython_extension(ipython):$/;"	f
+main	helpers/imgcat/imgcat.py	/^def main():$/;"	f
+main	helpers/ipynb_convert/convert.py	/^def main():$/;"	f
+main	helpers/layout_kitten.py	/^def main(args: List[str]) -> None:$/;"	f	typeref:typename:None
+mainloop	helpers/matplotlib-backend-kitty/__init__.py	/^    mainloop = lambda: None$/;"	m	class:JukitBackend
+merge_outputs	helpers/ipynb_convert/util.py	/^def merge_outputs(outhist_file, cell_above, cell_below, new_id):$/;"	f
+monitor_excount_dec	helpers/jukit_run/jukit_run.py	/^def monitor_excount_dec(func):$/;"	f
+monitor_execution_count	helpers/jukit_run/jukit_run.py	/^class monitor_execution_count(object):$/;"	c
+monitor_wrapper	helpers/jukit_run/jukit_run.py	/^    def monitor_wrapper(self, *args):$/;"	f	function:monitor_excount_dec	file:
+mpimg	helpers/jukit_run/util.py	/^import matplotlib.image as mpimg$/;"	I	nameref:module:matplotlib.image
+nb_to_script	helpers/ipynb_convert/convert.py	/^def nb_to_script(nb, cell_ids=None, language="python"):$/;"	f
+new_figure_manager	helpers/imgcat/__init__.py	/^def new_figure_manager(num, *args, **kwargs):$/;"	f
+new_figure_manager_given_figure	helpers/imgcat/__init__.py	/^def new_figure_manager_given_figure(num, figure):$/;"	f
+plt	helpers/imgcat/__init__.py	/^import matplotlib.pyplot as plt$/;"	I	nameref:module:matplotlib.pyplot
+plt	helpers/jukit_run/jukit_run.py	/^from matplotlib import pyplot as plt$/;"	x	nameref:unknown:pyplot
+plt	helpers/jukit_run/util.py	/^from matplotlib import pyplot as plt$/;"	x	nameref:unknown:pyplot
+plt	helpers/matplotlib-backend-kitty/__init__.py	/^import matplotlib.pyplot as plt$/;"	I	nameref:module:matplotlib.pyplot
+plt	helpers/matplotlib_show_wrapper/__init__.py	/^import matplotlib.pyplot as plt$/;"	I	nameref:module:matplotlib.pyplot
+s:add_signs_in_region	autoload/jukit.vim	/^fun! s:add_signs_in_region(lnum_end) abort$/;"	f
+s:check_dict_validity	autoload/jukit/layouts.vim	/^fun! s:check_dict_validity(layout) abort$/;"	f
+s:check_filetype	autoload/jukit/convert.vim	/^fun s:check_filetype()$/;"	f
+s:check_response	autoload/jukit/kitty/cmd.vim	/^fun! s:check_response(cmd, response) abort$/;"	f
+s:check_response	autoload/jukit/tmux/cmd.vim	/^fun! s:check_response(cmd, response, quiet) abort$/;"	f
+s:clean_outhist_autocmd	autoload/jukit/send.vim	/^fun! s:clean_outhist_autocmd() abort$/;"	f
+s:clean_outhist_time_passed	autoload/jukit/send.vim	/^fun! s:clean_outhist_time_passed() abort$/;"	f
+s:comp_func	autoload/jukit.vim	/^fun! s:comp_func(v1, v2) abort$/;"	f
+s:convert_to_ipynb	autoload/jukit/convert.vim	/^fun! s:convert_to_ipynb(args) abort$/;"	f
+s:convert_to_script	autoload/jukit/convert.vim	/^fun! s:convert_to_script() abort$/;"	f
+s:copy_output	autoload/jukit/cells.vim	/^fun! s:copy_output(from_id, to_id) abort$/;"	f
+s:create_autocmd_close_splits	autoload/jukit/splits.vim	/^fun! s:create_autocmd_close_splits() abort$/;"	f
+s:default_layout	plugin/jukit.vim	/^let s:default_layout = {$/;"	v
+s:delete_output	autoload/jukit/cells.vim	/^fun! s:delete_output(cell_id) abort$/;"	f
+s:dict_valid	autoload/jukit/layouts.vim	/^    let s:dict_valid = s:check_dict_validity(g:jukit_layout)$/;"	v
+s:fix_duplicate_ids	autoload/jukit.vim	/^fun! s:fix_duplicate_ids(ids) abort$/;"	f
+s:fix_pos	autoload/jukit.vim	/^fun! s:fix_pos(i, ids) abort$/;"	f
+s:get_buf_by_name	autoload/jukit/nvimterm/layouts.vim	/^fun! s:get_buf_by_name(name, output_exists, outhist_exists) abort$/;"	f
+s:get_buf_by_name	autoload/jukit/vimterm/layouts.vim	/^fun! s:get_buf_by_name(name, output_exists, outhist_exists) abort$/;"	f
+s:get_key	autoload/jukit/util.vim	/^fun! s:get_key(json, key, quiet) abort$/;"	f
+s:get_pane_by_name	autoload/jukit/tmux/layouts.vim	/^fun! s:get_pane_by_name(name, output_exists, outhist_exists) abort$/;"	f
+s:highlight_sep_lines	autoload/jukit.vim	/^fun! s:highlight_sep_lines(val) abort$/;"	f
+s:inline_plot_psbl	autoload/jukit/splits.vim	/^let s:inline_plot_psbl = index(s:supported_graphical_term, g:jukit_terminal) >= 0$/;"	v
+s:invalid_kitty_version	autoload/jukit/splits.vim	/^    let s:invalid_kitty_version = jukit#kitty#cmd#invalid_version(g:jukit_required_kitty_version/;"	v
+s:invalid_term	plugin/jukit.vim	/^    let s:invalid_term = g:jukit_terminal$/;"	v
+s:ipython_version	autoload/jukit/splits.vim	/^    let s:ipython_version = matchstr(s:ipython_version, '.\\{-}\\zs[0-9\\.]\\{1,}')$/;"	v
+s:ipython_version	autoload/jukit/splits.vim	/^    let s:ipython_version = system(g:jukit_shell_cmd . ' --version')$/;"	v
+s:jukit_ext_aupat	plugin/jukit.vim	/^    let s:jukit_ext_aupat = '*'$/;"	v
+s:jukit_ext_aupat	plugin/jukit.vim	/^    let s:jukit_ext_aupat = '*.' . join(g:jukit_hl_ext_enabled, ',*.')$/;"	v
+s:jukit_textcell_regex	autoload/jukit/cells.vim	/^let s:jukit_textcell_regex = b:jukit_md_start . '\\_.{-}' . b:jukit_md_end$/;"	v
+s:layout_kitten	autoload/jukit/kitty/layouts.vim	/^let s:layout_kitten = jukit#util#plugin_path() . '\/helpers\/layout_kitten.py'$/;"	v
+s:map_extract_ids	autoload/jukit/util.vim	/^fun! s:map_extract_ids(v, l) abort$/;"	f
+s:markers_nlines	autoload/jukit.vim	/^let s:markers_nlines = -1$/;"	v
+s:md_end_pattern	autoload/jukit.vim	/^let s:md_end_pattern = '^' . g:_jukit_md_mark . '.*'$/;"	v
+s:md_start_pattern	autoload/jukit.vim	/^let s:md_start_pattern = '.*' . g:_jukit_md_mark . '$'$/;"	v
+s:merge_outputs	autoload/jukit/cells.vim	/^fun! s:merge_outputs(cell_above, cell_below, new_id) abort$/;"	f
+s:msg	autoload/jukit.vim	/^let s:msg = "[vim-jukit] Trying to use a deprecated function. Please visit https:\/\/github.com\//;"	v
+s:new_marker	autoload/jukit/cells.vim	/^fun! s:new_marker(id1, id2, lnum, markdown) abort$/;"	f
+s:nvim_version	plugin/jukit.vim	/^    let s:nvim_version = matchstr(execute('version'), '.\\{-}NVIM v\\zs[0-9\\.]\\{1,}')$/;"	v
+s:outhist_job_mode	autoload/jukit/vimterm/splits.vim	/^fun! s:outhist_job_mode(stay) abort$/;"	f
+s:outhist_normal_mode	autoload/jukit/nvimterm/splits.vim	/^fun! s:outhist_normal_mode(stay) abort$/;"	f
+s:outhist_normal_mode	autoload/jukit/vimterm/splits.vim	/^fun! s:outhist_normal_mode(stay) abort$/;"	f
+s:output_exists	autoload/jukit/send.vim	/^fun! s:output_exists() abort$/;"	f
+s:parse_layout	autoload/jukit/nvimterm/layouts.vim	/^fun! s:parse_layout(layout, op, oh) abort$/;"	f
+s:parse_layout	autoload/jukit/tmux/layouts.vim	/^fun! s:parse_layout(layout, op, oh) abort$/;"	f
+s:parse_layout	autoload/jukit/vimterm/layouts.vim	/^fun! s:parse_layout(layout, op, oh) abort$/;"	f
+s:rename_first_cell	autoload/jukit.vim	/^fun! s:rename_first_cell() abort$/;"	f
+s:replace	autoload/jukit/util.vim	/^    fun s:replace() closure$/;"	f
+s:replace_marker	autoload/jukit.vim	/^fun! s:replace_marker(id1, id2, lnum) abort$/;"	f
+s:script_path	autoload/jukit/util.vim	/^let s:script_path = expand("<sfile>:p:h")$/;"	v
+s:search_all_windows	autoload/jukit/kitty/splits.vim	/^fun! s:search_all_windows() abort$/;"	f
+s:search_current_tab	autoload/jukit/kitty/splits.vim	/^fun! s:search_current_tab() abort$/;"	f
+s:send	autoload/jukit/send.vim	/^fun! s:send(bufnr, text) abort$/;"	f
+s:send_to_split	autoload/jukit/send.vim	/^fun! s:send_to_split(magic_cmd, code, save, ...) abort$/;"	f
+s:set_marker_above	autoload/jukit/cells.vim	/^fun! s:set_marker_above(id1, id2) abort$/;"	f
+s:set_marker_below	autoload/jukit/cells.vim	/^fun! s:set_marker_below(id1, id2) abort$/;"	f
+s:setup_inner_split	autoload/jukit/tmux/layouts.vim	/^fun! s:setup_inner_split(outer_pane, inner_pair, panes_filtered, main_pane, outer_first) abort$/;"	f
+s:setup_outer_split	autoload/jukit/tmux/layouts.vim	/^fun! s:setup_outer_split(outer_pane, panes_filtered, main_pane, outer_first) abort$/;"	f
+s:setup_term	autoload/jukit/nvimterm/splits.vim	/^fun! s:setup_term() abort$/;"	f
+s:setup_term	autoload/jukit/vimterm/splits.vim	/^fun! s:setup_term() abort$/;"	f
+s:supported_graphical_term	autoload/jukit/splits.vim	/^let s:supported_graphical_term = ['kitty', 'tmux']$/;"	v
+s:system	autoload/jukit/kitty/cmd.vim	/^fun! s:system(arglist) abort$/;"	f
+s:system	autoload/jukit/tmux/cmd.vim	/^fun! s:system(arglist) abort$/;"	f
+s:textcell_nlines	autoload/jukit.vim	/^let s:textcell_nlines = -1$/;"	v
+s:textcell_syn_match	autoload/jukit.vim	/^fun! s:textcell_syn_match() abort$/;"	f
+s:tmux_property	autoload/jukit/tmux/cmd.vim	/^fun! s:tmux_property(property) abort$/;"	f
+s:v_split	autoload/jukit/splits.vim	/^    let s:v_split = split(s:ipython_version, '\\.')$/;"	v
+s:v_split	plugin/jukit.vim	/^    let s:v_split = split(s:nvim_version, '\\.')$/;"	v
+s:v_split	plugin/jukit.vim	/^    let s:v_split = split(s:vim_version, '\\.')$/;"	v
+s:valid_vim	plugin/jukit.vim	/^    let s:valid_vim = jukit#util#is_valid_version($/;"	v
+s:vim_version	plugin/jukit.vim	/^    let s:vim_version = matchstr(execute('version'), '.\\{-}VIM - Vi IMproved \\zs[0-9\\.]\\{1,}/;"	v
+s:wait_for_pane	autoload/jukit/tmux/splits.vim	/^fun! s:wait_for_pane(pane, num_tries, delay)$/;"	f
+script_to_nb	helpers/ipynb_convert/convert.py	/^def script_to_nb(py_str, out_hist, language="python"):$/;"	f
+setVisible	helpers/matplotlib-backend-kitty/__init__.py	/^    def setVisible(self, visible):$/;"	m	class:JukitCanvas
+show	helpers/imgcat/__init__.py	/^    def show(self):$/;"	m	class:FigureManagerImgcat
+show	helpers/imgcat/__init__.py	/^def show(block=None):$/;"	f
+show	helpers/matplotlib-backend-kitty/__init__.py	/^    def show(cls, *_, **kwargs):$/;"	m	class:JukitBackend
+show	helpers/matplotlib-backend-kitty/__init__.py	/^    def show(self, *_, **kwargs):$/;"	m	class:JukitFigureManager
+show_wrapper	helpers/matplotlib_show_wrapper/__init__.py	/^def show_wrapper(show, mpl_block=True):$/;"	f
+supported_term	plugin/jukit.vim	/^let supported_term = ['vimterm', 'nvimterm', 'kitty', 'tmux']$/;"	v
+terminal	autoload/.jukit/.jukit_info.json	/^{"terminal":"tmux"}/;"	s
+terminal	autoload/jukit/tmux/.jukit/.jukit_info.json	/^{"terminal":"tmux"}/;"	s
+to_content_buf	helpers/imgcat/imgcat.py	/^def to_content_buf(data):$/;"	f
+vim-jukit	README.md	/^# vim-jukit$/;"	c
+visible	helpers/matplotlib-backend-kitty/__init__.py	/^    visible = False$/;"	v	class:JukitCanvas
+write	helpers/jukit_run/jukit_run.py	/^    def write(self, text):$/;"	m	class:StringIOWrapper
