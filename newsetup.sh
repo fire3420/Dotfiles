@@ -18,7 +18,7 @@ fi
 
 printf "${BLUE}%s${NORMAL}\n" "Cloning dotfiles from ${REPO_HTTPS}"
 # env git clone --depth=1 $REPO_HTTPS $DOTFILES
-env git clone -b nvim ---depth=1 -single-branch $REPO_HTTPS $DOTFILES
+env git clone -b nvim --depth=1 --single-branch $REPO_HTTPS $DOTFILES
 
 wget https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb -P $DOTFILES
 apt install -y $DOTFILES/nvim-linux64.deb
