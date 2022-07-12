@@ -1,9 +1,11 @@
+
+
 -- example file i.e lua/custom/init.lua
 
 -- Mac
 -- vim.g.python3_host_prog = "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/bin/python3"
 -- Ubuntu
-vim.g.python3_host_prog = "/usr/bin/python3"
+vim.g.python3_host_prog = "/home/john/Jungyong/nvim/bin/python3"
 
 vim.g.formatters_python = {'yapf'}
 vim.g.formatter_yapf_style = 'google'

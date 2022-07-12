@@ -8,7 +8,7 @@ g.transparency = config.ui.transparency
 g.theme_switcher_loaded = false
 
 -- use filetype.lua instead of filetype.vim
-g.did_load_filetypes = 0
+-- g.did_load_filetypes = 0
 g.do_filetype_lua = 1
 
 opt.laststatus = 3 -- global statusline
@@ -16,7 +16,7 @@ opt.statusline = config.ui.statusline.config
 opt.showmode = false
 
 opt.title = true
-opt.clipboard = "unnamedplus"
+-- opt.clipboard = "unnamedplus"
 opt.cul = true -- cursor line
 
 -- Indenting

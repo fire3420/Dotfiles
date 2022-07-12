@@ -125,6 +125,17 @@ autocmd("FileType", {
 })
 
 
+M.syntax = {
+
+  n = {
+    ["<leader>P"] = {
+      '<cmd>set syntax=python<CR>',
+      "set_python",
+    },
+  },
+
+}
+
 M.buffer = {
 
   n = {
